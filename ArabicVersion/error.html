@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>مستشفي طب الاسنان | شاشه القفل</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- IE Compatibility meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../shared/images/favicon.png">
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/core.min.css">
+    <link rel="stylesheet" href="../shared/styles/colors.min.css">
+    <link rel="stylesheet" href="assets/styles/components.min.css">
+    <link rel="stylesheet" href="./assets/styles/error.css">
+    <link rel="stylesheet" href="../shared/styles/animate.min.css">
+    <link rel="stylesheet" href="../shared/icons/icomoon/styles.css">
+</head>
+<body class="navbar-bottom">
+
+<!-- Page container -->
+<div class="page-container" id="container-error">
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+           <img alt="oops-img" src="../shared/images/error.jpg" id="error-img">
+            <h1 class="text-danger-700 text-center mt-10">!عفوا الصفحه المطلوبه غير موجوده</h1>
+            <div class="form-group text-center">
+                <button class="btn btn-primary">الصفحه الرئيسيه</button>
+            </div>
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</div>
+<!-- /page container -->
+<div class="navbar navbar-default footer">
+
+    <div id="footer">
+        <div class="navbar-text">
+
+
+            <p>
+                جميع الحقوق محفوظه لتقنيه المعلومات | جامعه الدلتا
+                <span id="year"> </span></p>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="../shared/scripts/jquery.min.js"></script>
+<script src="assets/scripts/bootstrap.min.js"></script>
+<script src="../shared/scripts/drilldown.js"></script>
+<script src="../shared/scripts/nicescroll.min.js"></script>
+<script src="assets/scripts/app.min.js"></script>
+<script>
+    $("#year").text(new Date().getFullYear() +' ©');
+
+</script>
+</body>
+</html>

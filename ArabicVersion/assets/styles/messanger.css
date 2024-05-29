@@ -1,0 +1,251 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+
+/*******************************************************************/
+
+.navigation li a{
+    color: #0c7cd5;
+}
+.navigation li a:hover, .navigation li a:focus{
+    background-color: transparent;
+    color: #0c7cd5;
+}
+.panel-title img{
+    height: 45px;
+    width: 45px;
+    max-height: 50px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+#contentArea {
+    width: 100%;
+}
+#send-btn:hover, #send-btn:active, #send-btn:focus{
+    box-shadow: 20px 23px 49px 118px rgba(255, 255, 255, 0.05) inset!important;
+}
+
+.mbm {
+    margin-bottom: 10px;
+}
+
+._4-u2 {
+    background: #fff;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    border-radius: 3px;
+}
+
+._2iwo {
+    padding: 12px;
+}
+
+._2iwq {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: placeHolderShimmer;
+    -webkit-animation-timing-function: linear;
+    background: #f6f7f8;
+    background-image: -webkit-gradient(linear, left center, right center, from(#f6f7f8), color-stop(0.2, #edeef1), color-stop(0.4, #f6f7f8), to(#f6f7f8));
+    background-image: -webkit-linear-gradient(left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+    background-repeat: no-repeat;
+    background-size: 800px 104px;
+    height: 104px;
+    position: relative;
+}
+
+._2rtk ._2iwq {
+    -webkit-animation-name: prideShimmer;
+    background-image: -webkit-gradient(linear, center top, center bottom, from(deg), color-stop(0, red), color-stop(0.15, orange), color-stop(0.3, yellow), color-stop(0.45, green), color-stop(0.6, blue), color-stop(0.75, indigo), color-stop(0.8, violet), to(red));
+    background-image: -webkit-linear-gradient(135deg, red 0%, orange 15%, yellow 30%, green 45%, blue 60%, indigo 75%, violet 80%, red 100%);
+    background-repeat: repeat;
+    background-size: 50% auto;
+}
+
+.direction_rtl ._2iwq {
+    -webkit-animation-direction: reverse;
+}
+
+._2iwq div {
+    background: #fff;
+    height: 6px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+div._2iwr {
+    height: 40px;
+    left: 40px;
+    right: auto;
+    top: 0;
+    width: 8px;
+}
+
+div._2iws {
+    height: 8px;
+    left: 48px;
+    top: 0;
+}
+
+div._2iwt {
+    left: 136px;
+    top: 8px;
+}
+
+div._2iwu {
+    height: 12px;
+    left: 48px;
+    top: 14px;
+}
+
+div._2iwv {
+    left: 100px;
+    top: 26px;
+}
+
+div._2iww {
+    height: 10px;
+    left: 48px;
+    top: 32px;
+}
+
+div._2iwx {
+    height: 20px;
+    top: 40px;
+}
+
+div._2iwy {
+    left: 410px;
+    top: 60px;
+}
+
+div._2iwz {
+    height: 13px;
+    top: 66px;
+}
+
+div._2iw- {
+    left: 440px;
+    top: 79px;
+}
+
+div._2iw_ {
+    height: 13px;
+    top: 85px;
+}
+
+div._2ix0 {
+    left: 178px;
+    top: 98px;
+}
+
+@-webkit-keyframes placeHolderShimmer {
+    0% {
+        background-position: -468px 0;
+    }
+
+    100% {
+        background-position: 468px 0;
+    }
+}
+@-webkit-keyframes prideShimmer {
+    from {
+        background-position: top left;
+    }
+
+    to {
+        background-position: top right;
+    }
+}
+
+.status-chat{
+    top: 6px;
+}
+.media{
+    cursor: pointer;
+}
+.status-mark{
+    position: absolute;
+    left: -3px;
+    top: 30px;
+}
+
+.chat-list .media{
+    margin: 15px!important;
+    border: 0;
+    cursor: default;
+}
+.chat-list .media-content:not([class*=bg-]){
+    border-radius: 15px;
+}
+.chat-list{
+    border-radius: 15px;
+    height: 520px;
+}
+.content-group{
+    border-radius: 15px;
+    height: auto!important;
+}
+.media .media-left a{
+    cursor: default;
+}
+.current-container{
+    box-shadow: 0 0 0 0!important;
+}
+.current-container #user-active-name{
+    color: #1E88E5;
+}
+.kv-file-upload{
+    display: none;
+}
+.fancybox-container{
+    z-index: 9000;
+}
+.media-body img{
+    width: 60px;
+    height: 60px;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#send-btn{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background-color: transparent;
+}
+#send-btn:hover{
+    background-color: transparent;
+}
+#send-btn img{
+    width: 25px;
+    transform: rotate(180deg);
+}
+@media screen and (max-width: 768px) {
+    .nav-tabs:before {
+        content: '';
+    }
+    .nav-tabs>li.active>a:after, .nav-tabs>li.active>a:focus:after, .nav-tabs>li.active>a:hover:after{
+        background-color: rgb(130, 26, 60);
+    }
+
+
+}
+@media (min-width: 769px){
+    .sidebar {
+        display: table-cell;
+        vertical-align: top;
+        width: 300px;
+        padding-left: 10px;
+    }
+    .nav-tabs.nav-tabs-highlight>li.active>a, .nav-tabs.nav-tabs-highlight>li.active>a:focus, .nav-tabs.nav-tabs-highlight>li.active>a:hover{
+        border-top-color: rgb(130, 26, 60)
+    }
+
+}

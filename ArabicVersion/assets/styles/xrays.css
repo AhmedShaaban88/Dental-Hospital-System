@@ -1,0 +1,52 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+/*******************************************************************/
+
+
+.glyphicon-folder-open:after{
+    content: " تصفح ";
+}
+
+.glyphicon-trash:after{
+    content: "مسح الكل ";
+}
+.glyphicon-trash:before{
+    color: red;
+    margin-left: 10px;
+}
+.kv-file-upload{
+    display: none;
+}
+
+
+.pace-loader {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 129px;
+    left: 0;
+    z-index: 9999;
+    display: none;
+}
+.theme_tail .pace_activity2 {
+    position: absolute;
+    top: 50%;
+}
+.pace-loader h5{
+    position: absolute;
+    top: 53%;
+    left: 45%;
+}
+@media screen and (max-width: 768px){
+    .pace-loader{
+        top:170px;
+    }
+    .pace-loader h5{
+        display: none;
+    }
+}
+
+

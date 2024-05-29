@@ -1,0 +1,9 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+/*******************************************************************/
+
+.spec{
+    list-style-type: none;
+    padding-right: 0;
+}

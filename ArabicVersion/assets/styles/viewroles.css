@@ -1,0 +1,7 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+/*******************************************************************/
+td > a{
+    width: auto!important;
+}

@@ -1,0 +1,2245 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>مستشفي طب الاسنان | بيانات المريض</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- IE Compatibility meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../shared/images/favicon.png">
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/core.min.css">
+    <link rel="stylesheet" href="../shared/styles/colors.min.css">
+    <link rel="stylesheet" href="assets/styles/components.min.css">
+    <link rel="stylesheet" href="../shared/icons/icomoon/styles.css">
+    <link rel="stylesheet" href="../shared/styles/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="../shared/styles/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="assets/styles/patient.css">
+</head>
+<body class="navbar-bottom">
+
+<!-- Page header -->
+<div class="page-header page-header-inverse">
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-inverse navbar-transparent">
+        <div class="navbar-header" id="navbar-mobile">
+            <h2 class="navbar-brand">مستشفي طب الاسنان والفم </h2>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown language-switch">
+                    <a class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span>
+                        <img src="../shared/images/eg.png" alt="" class="position-left">
+                        عربي
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="english"><img src="../shared/images/us.png" alt=""> English</a></li>
+                        <li><a class="arabic"><img src="../shared/images/eg.png" alt=""> عربي</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="../shared/images/avatar.png" alt="">
+                        <span>احمد</span>
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class=" icon-key"></i> تغيير كلمه المرور</a></li>
+                        <li><a href="#"><i class="icon-switch2"></i> تسجيل خروج</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+
+
+    <!-- /page header content -->
+
+
+    <div class="navbar navbar-inverse navbar-transparent" id="navbar-second">
+        <ul class="nav navbar-nav no-border visible-xs-block">
+            <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second-toggle"><i class="icon-menu7"></i></a></li>
+        </ul>
+
+        <div class="navbar-collapse collapse" id="navbar-second-toggle">
+            <ul class="nav navbar-nav navbar-nav-material">
+                <li><a href="">الرئيسيه</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">المرضي <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class=" icon-user-plus"></i> اضافه مريض</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="icon-list"></i> عرض المرضي</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        الموظفين <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class=" icon-user-plus"></i> اضافه موظف</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="icon-list"></i> عرض الموظفين</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        اعدادات العيادات <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">الاماكن</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">الاقسام</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">تخصصات الاقسام</a>
+                        </li> <li class="dropdown-submenu">
+                        <a href="#">سعه العياده</a>
+                    </li> <li class="dropdown-submenu">
+                        <a href="#">الوظائف</a>
+                    </li> <li class="dropdown-submenu">
+                        <a href="#">الامراض</a>
+                    </li> <li class="dropdown-submenu">
+                        <a href="#">الخدمات</a>
+                    </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        التحويلات <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">التحويلات بين العيادات</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">قائمه المرضي</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        الاشعه<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">طلب اشعه بانوراما</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">اضافه اشعه اكس</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">اضافه اشعه بانوراما</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">عرض كل الاشعه</a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+<!-- /page header -->
+
+
+<!-- Page container -->
+<div class="page-container">
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <div class="content-wrapper">
+            <h5 class="text-center border-bottom-blue page-head">
+                 بيانات المريض
+                 <span class="currentBold">خالد السعيد السيد احمد</span>
+            </h5>
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="panel panel-flat">
+                        <div class="panel-heading text-bold text-right">
+
+                            اعدادات المريض
+                            <i class="icon-cog3 position-left"></i>
+                        </div>
+
+                        <div class="panel-body mt-10">
+                            <div class="tabbable nav-tabs-vertical nav-tabs-left">
+                                <ul class="nav nav-tabs nav-tabs-highlight">
+                                    <li class="active text-right">
+                                        <a href="#patient-settings" data-toggle="tab">
+                                            البيانات الشخصيه
+                                        </a>
+                                    </li>
+                                    <li class="text-right">
+                                        <a href="#diseases"  data-toggle="tab">
+                                            الامراض
+                                        </a>
+                                    </li>
+                                    <li class="text-right">
+                                        <a href="#services" data-toggle="tab">
+                                            الخدمات
+                                        </a>
+                                    </li>
+                                    <li class="text-right">
+                                        <a href="#rays" data-toggle="tab">
+                                            الاشعه
+                                        </a>
+                                    </li>
+                                    <li class="text-right">
+                                        <a href="#plan" data-toggle="tab">
+                                            الخطه العلاجيه
+                                        </a>
+                                    </li>
+                                    <li class="text-right">
+                                        <a href="#complaints" data-toggle="tab">
+                                            الشكاوي
+                                        </a>
+                                    </li>
+                                    <li class="text-right">
+                                        <a href="#notes" data-toggle="tab">
+                                            الملاحظات
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div class="tab-pane active has-padding" id="patient-settings">
+                                        <div class="panel panel-flat" id="static">
+                                            <div class="panel-heading text-right">
+                                                <h6 class="panel-title">
+                                                   بيانات المريض
+                                                </h6>
+                                            </div>
+
+                                            <div class="panel-body" id="patientPanel">
+                                                <div>
+                                                    <div class="table-responsive ">
+                                                    <table class="table">
+                                                        <tbody>
+                                                        <tr class="active">
+                                                            <td>
+                                                               الاسم
+                                                            </td>
+                                                            <td>
+                                                                <p>
+                                                                    <i class="icon-user position-left"></i>
+                                                                    <span class="currentBold">احمد علي</span>
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr >
+                                                            <td>
+                                                                الكود
+                                                            </td>
+                                                            <td>
+                                                                <p>
+                                                                    <i class="icon-address-book2 position-left"></i>
+                                                                    <span class="currentBold">22</span>
+
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="active">
+                                                            <td>
+                                                               النوع
+                                                            </td>
+                                                            <td>
+                                                                <p>
+                                                                    <i class="icon-man-woman position-left"></i>
+                                                                    <span class="currentBold">ذكر</span>
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr >
+                                                            <td>
+                                                               تاريخ الميلاد
+                                                            </td>
+                                                            <td>
+                                                                <p>
+                                                                    <i class="icon-calendar2 position-left"></i>
+                                                                    <span class="currentBold"> 11/09/1980  (<span class="m-5 text-success">بالغ</span>)</span>
+
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr  class="active">
+                                                            <td>
+                                                              العمر
+                                                            </td>
+                                                            <td>
+                                                                <p>
+                                                                    <i class="icon-calendar2 position-left"></i>
+                                                                    <span class="currentBold"> 18</span>
+
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr >
+                                                            <td>
+                                                               العنوان
+                                                            </td>
+                                                            <td>
+
+                                                                <p class="currentBold">
+                                                                    <i class="icon-location4"></i>
+                                                                    <span>الدقهليه</span>
+                                                                    <span>-</span>
+                                                                    <span>المنصوره</span>
+                                                                </p>
+
+                                                            </td>
+                                                        </tr>
+                                                        <tr  class="active">
+                                                            <td>
+                                                               الرقم القومي
+                                                            </td>
+                                                            <td>
+                                                                <p>
+                                                                    <i class="icon-vcard position-left"></i>
+                                                                    <span class="currentBold">2962144555544</span>
+
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr >
+                                                            <td>
+                                                               رقم هاتف 1
+                                                            </td>
+                                                            <td>
+
+                                                                <p>
+                                                                    <i class="icon-phone2 position-left"></i>
+                                                                    <span class="currentBold">0106147545554</span>
+                                                                </p>
+
+                                                            </td>
+                                                        </tr>
+                                                        <tr  class="active">
+                                                            <td>
+                                                               رقم هاتف 2
+                                                            </td>
+                                                            <td>
+                                                                <p>
+                                                                    <i class="icon-phone2 position-left"></i>
+                                                                    <span class="currentBold">0106147545554</span>
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+
+
+
+                                                    </table>
+                                                </div>
+
+
+                                                </div>
+                                                <div class="text-center mt-5">
+                                                    <button id="editBtn" class="btn btn-sm btn-default">
+                                                        <b>تعديل</b>
+
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="panel panel-flat" id="editPatient">
+                                            <div class="panel-heading text-right">
+                                                <h6 class="panel-title">
+                                                    تعديل اعدادات المريض
+                                                </h6>
+                                            </div>
+
+                                            <div class="panel-body">
+                                                <div>
+                                                    <form action="#" id="editPatientForm">
+
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="pName">الاسم <span class="required" title="مطلوب">*</span></label>
+                                                            <input value="احمد محمد" id="pName" type="text" class="form-control">
+                                                            <small class="help hidden" id="pNameHelper">
+                                                                <i class="icon-cancel-circle2"></i> لابد ان يكون اسم المريض علي الاقل 3 حروف وباللغه العربيه</small>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-sm-6 mt-5">
+                                                        <div class="form-group">
+                                                            <label for="pCode"> الكود</label>
+                                                            <input id="pCode" type="text" class="form-control" disabled value="20">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group">
+                                                                <label class="display-block">النوع <span class="required" title="مطلوب">*</span></label>
+
+                                                                <label class="radio-inline">
+                                                                    <input checked required type="radio" name="gender" value="male" class="styled">
+                                                                    ذكر
+                                                                </label>
+
+                                                                <label class="radio-inline">
+                                                                    <input required type="radio" name="gender" value="female" class="styled">
+                                                                    انثي
+                                                                </label>
+                                                                <small class="help hidden" id="typeHelp">
+                                                                    <i class="icon-cancel-circle2"></i>النوع مطلوب من فضلك اختر واحد</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group">
+                                                                <label for="pBirth">تاريخ الميلاد </label>
+                                                                <input value="11/09/1980" id="pBirth" type="text" class="form-control birth">
+                                                                <span id="adult"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <fieldset>
+                                                        <div class="row address">
+
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label>المحافظه</label>
+                                                                    <select data-placeholder="اختر المحافظه" class="select">
+                                                                        <option></option>
+                                                                        <option value="Cambodia">Cambodia</option>
+                                                                        <option selected value="Cameroon">Cameroon</option>
+                                                                        <option value="Canada">Canada</option>
+                                                                        <option value="Cape Verde">Cape Verde</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label>المدينه</label>
+                                                                    <i class="icon-spinner3 spineer-select"></i>
+                                                                    <select data-placeholder="اختر المدينه/المركز" class="select" disabled="disabled">
+
+                                                                        <option></option>
+                                                                        <option value="Cambodia">Cambodia</option>
+                                                                        <option value="Cameroon">Cameroon</option>
+                                                                        <option selected value="Canada">Canada</option>
+                                                                        <option value="Cape Verde">Cape Verde</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+
+                                                    <div class="form-group mt-5">
+                                                        <label for="ID">الرقم القومي</label>
+                                                        <input id="ID" value="123456789" type="number" min="0" class="form-control">
+                                                    </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="phone1">رقم هاتف 1</label>
+                                                                    <input id="phone1" type="text" class="form-control">
+                                                                    <small class="help hidden" id="phone1Help">
+                                                                        <i class="icon-cancel-circle2"></i>لابد ان يكون رقم الهاتف صحيح</small>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="phone2">رقم هاتف 2</label>
+                                                                    <input id="phone2" type="text" class="form-control">
+                                                                    <small class="help hidden" id="phone2Help">
+                                                                        <i class="icon-cancel-circle2"></i>لابد ان يكون رقم الهاتف صحيح</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="text-left mr-5 mb-5">
+                                                <button type="submit" class="btn btn-sm btn-success btn-ladda btn-ladda-spinner" data-spinner-color="#fff" data-style="fade" form="editPatientForm"><span class="ladda-label">حفظ  </span></button>
+
+                                                <button type="reset" class="btn btn-sm btn-danger" form="editPatientForm">مسح </button>
+                                                <button id="returnBtn" class="btn btn-sm btn-default">
+                                                    رجوع
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane has-padding" id="diseases">
+
+                                        <div class="panel panel-flat">
+                                            <div class="panel-heading text-right">
+                                                <h6 class="panel-title text-semibold">
+                                                   الامراض
+                                                </h6>
+                                            </div>
+
+                                            <div class="panel-body">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <tbody>
+                                                        <tr class="active">
+                                                            <td colspan="2">
+                                                                <div>
+                                                                    <span class="currentBold">سكر</span>
+                                                                    <div class="row p-5">
+                                                                <div class="col-sm-6">
+                                                                    <i class="icon-calendar2"></i>
+                                                                    <span>31/09/1996</span>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <i class="icon-user"></i>
+                                                                    بواسطه:
+                                                                    <span>احمد محمد السيد</span>
+                                                                </div>
+                                                            </div>
+                                                                </div>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                <div>
+                                                                    <span class="currentBold">ضغط الدم</span>
+                                                                    <div class="row p-5">
+                                                                <div class="col-sm-6">
+                                                                    <i class="icon-calendar2"></i>
+                                                                    <span>31/09/1996</span>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <i class="icon-user"></i>
+                                                                    بواسطه:
+                                                                    <span>احمد محمد السيد</span>
+                                                                </div>
+                                                            </div>
+                                                                </div>
+                                                            </td>
+
+                                                        </tr>
+                                                        </tbody>
+
+
+
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane has-padding" id="services">
+                                        <div class="panel panel-flat">
+                                            <div class="panel-heading text-right">
+                                                <h6 class="panel-title">
+                                                   الخدمات
+                                                </h6>
+                                            </div>
+
+                                            <div class="panel-body">
+                                                <div class="timeline timeline-center">
+                                                    <div class="timeline-container">
+
+                                                        <div class="timeline-date text-muted">Yesterday</div>
+
+                                                        <div class="timeline-row post-full">
+                                                            <div class="timeline-icon">
+                                                                <div class="bg-success-400">
+                                                                    <i class="icon-checkmark"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="timeline-time">
+                                                                <div class="timeline-action-container">
+                                                                    <div class="timeline-action-content">
+                                                                        <div class="text-center">
+
+                                                                            <p>اسم الخدمه : <b>حشو</b></p>
+                                                                            <p>اسم العياده : <b>عياده حشو</b></p>
+                                                                            <p>التاريخ : <b>09/08/2015</b></p>
+                                                                            <p>الوقت : <b>2:05صباحا</b></p>
+                                                                            <p>الحاله : <b>اكتملت</b></p>
+                                                                            <button class="btn btn-default" data-target=".cases" data-toggle="modal">
+                                                                                المزيد
+
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
+
+
+                                                        <div class="timeline-date text-muted">10 March 2016</div>
+
+
+
+                                                        <div class="timeline-row post-even">
+                                                            <div class="timeline-icon">
+                                                                <div class="bg-info-400">
+                                                                    <i class="icon-calendar2"></i>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="timeline-time">
+                                                                <div class="timeline-action-container reverse-container">
+                                                                    <div class="timeline-action-content reverse-content">
+                                                                        <div class="text-center">
+
+                                                                            <p>اسم الخدمه : <b>حشو</b></p>
+                                                                            <p>اسم العياده : <b>عياده حشو</b></p>
+                                                                            <p>التاريخ : <b>09/08/2015</b></p>
+                                                                            <p>الوقت : <b>2:05صباحا</b></p>
+                                                                            <p>الحاله : <b>اكتملت</b></p>
+                                                                            <button class="btn btn-default" data-target=".cases" data-toggle="modal">
+                                                                                المزيد
+
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div> <div class="timeline-date text-muted">Yesterday</div>
+
+                                                        <div class="timeline-row post-full">
+                                                            <div class="timeline-icon">
+                                                                <div class="bg-success-400">
+                                                                    <i class="icon-checkmark"></i>
+                                                                </div>
+                                                            </div>
+                                                            <div class="timeline-time">
+                                                                <div class="timeline-action-container">
+                                                                    <div class="timeline-action-content">
+                                                                        <div class="text-center">
+
+                                                                            <p>اسم الخدمه : <b>حشو</b></p>
+                                                                            <p>اسم العياده : <b>عياده حشو</b></p>
+                                                                            <p>التاريخ : <b>09/08/2015</b></p>
+                                                                            <p>الوقت : <b>2:05صباحا</b></p>
+                                                                            <p>الحاله : <b>اكتملت</b></p>
+                                                                            <button class="btn btn-default" data-target=".cases" data-toggle="modal">
+                                                                                المزيد
+
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
+
+
+                                                        <div class="timeline-date text-muted">10 March 2016</div>
+
+
+
+                                                        <div class="timeline-row post-even">
+                                                            <div class="timeline-icon">
+                                                                <div class="bg-info-400">
+                                                                    <i class="icon-calendar2"></i>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="timeline-time">
+                                                                <div class="timeline-action-container reverse-container">
+                                                                    <div class="timeline-action-content reverse-content">
+                                                                        <div class="text-center">
+
+                                                                            <p>اسم الخدمه : <b>حشو</b></p>
+                                                                            <p>اسم العياده : <b>عياده حشو</b></p>
+                                                                            <p>التاريخ : <b>09/08/2015</b></p>
+                                                                            <p>الوقت : <b>2:05صباحا</b></p>
+                                                                            <p>الحاله : <b>اكتملت</b></p>
+                                                                            <button class="btn btn-default" data-target=".cases" data-toggle="modal">
+                                                                                المزيد
+
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+
+
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="tab-pane has-padding" id="rays">
+                                        <div class="panel panel-flat">
+
+
+                                            <div class="panel-body">
+                                                <!--<div class="row">-->
+
+                                                    <!--<div class="col-md-12">-->
+
+                                                        <!--<form action="#" id="raysForm">-->
+                                                            <!--<div>-->
+                                                                <!--<div>-->
+                                                                    <!--<fieldset>-->
+                                                                        <!--<div>-->
+                                                                            <!--<div class="form-group">-->
+                                                                                <!--<label> نوع الاشعه <span class="required">*</span></label>-->
+
+
+                                                                                <!--<select id="rayTypes" data-placeholder="نوع الاشعه" class="select">-->
+                                                                                    <!--<option></option>-->
+                                                                                    <!--<optgroup label="نوع الاشعه">-->
+                                                                                        <!--<option  value="xrays"> اشعه اكس</option>-->
+                                                                                        <!--<option  value="panoramarays"> اشعه بانوراما</option>-->
+                                                                                    <!--</optgroup>-->
+                                                                                <!--</select>-->
+                                                                                <!--<small class="help hidden" id="raysTypesHelper"><i class="icon-cancel-circle2"></i>نوع الاشعه مطلوب من فضلك اختر واحده</small>-->
+
+                                                                            <!--</div>-->
+
+                                                                        <!--</div>-->
+                                                                        <!--<div class="row">-->
+                                                                            <!--<div class="col-sm-6">-->
+                                                                                <!--<label for="fromdate">الفتره من </label>-->
+                                                                                <!--<input id="fromdate" type="text" class="form-control birth">-->
+                                                                            <!--</div>-->
+                                                                            <!--<div class="col-sm-6">-->
+                                                                                <!--<label for="todate">الفتره الي </label>-->
+                                                                                <!--<input id="todate" type="text" class="form-control birth">-->
+                                                                            <!--</div>-->
+                                                                        <!--</div>-->
+                                                                    <!--</fieldset>-->
+                                                                    <!--<div class="text-center mt-5 mb-5">-->
+                                                                        <!--<button type="submit" class="btn btn-sm btn-success btn-ladda btn-ladda-spinner" id="search-btn" data-spinner-color="#fff" data-style="fade"><span class="ladda-label">بحث </span></button>-->
+
+                                                                    <!--</div>-->
+                                                                <!--</div>-->
+
+                                                            <!--</div>-->
+
+
+                                                        <!--</form>-->
+                                                    <!--</div>-->
+
+
+                                                <!--</div>-->
+
+                                                <!--<div class="row" id="before-search">-->
+                                                    <!--<div class="panel panel-flat open-folder">-->
+                                                        <!--<i class="icon-folder-open">-->
+
+                                                        <!--</i>-->
+                                                        <!--<p class="text-center text-muted">قم بأختيار نوع الاشعه والفتره الزمنيه ثم اضغط بحث</p>-->
+                                                    <!--</div>-->
+
+                                                <!--</div>-->
+                                                <!--&lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;loader &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+                                                <!--<div class="pace-demo hidden" id="loader-content">-->
+                                                    <!--<div class="theme_tail theme_tail_with_text"><div class="pace_progress" data-progress="60" style="width: 60%;"></div><div class="pace_activity"></div></div>-->
+                                                <!--</div>-->
+                                                <!-----------/loader ------------------>
+
+                                                <div class="tabbable">
+                                                    <ul class="nav nav-tabs nav-justified">
+                                                        <li class="active">
+                                                            <a href="#raysX" data-toggle="tab">اشعه مقطعيه</a></li>
+                                                        <li>
+                                                            <a href="#panorama" data-toggle="tab">اشعه بانوراما</a></li>
+                                                        <li>
+                                                            <a href="#photos" data-toggle="tab">صور المريض</a></li>
+                                                        <li>
+                                                            <a href="#analysis" data-toggle="tab">صور التحاليل</a></li>
+
+                                                    </ul>
+
+                                                    <div class="tab-content">
+
+
+
+                                                        <div class="tab-pane active" id="raysX">
+                                                            <div class="row mt-5">
+                                                                <div class="panel panel-flat">
+                                                                    <div class="panel-body">
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg1.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg1.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg2.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg2.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg3.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg3.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/avatar.png" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/avatar.png" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div> <div class="col-sm-4 mt-5">
+                                                                        <a href="../shared/images/bg1.jpg" data-fancybox="gallery">
+                                                                            <img alt="ray-image" src="../shared/images/bg1.jpg" class="x-ray-img">
+                                                                            <div class="text-center img-details">
+                                                                                <p>اشعه مقطعيه </p>
+                                                                                <p>22/06/1996</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg2.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg2.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg3.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg3.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/avatar.png" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/avatar.png" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="tab-pane" id="panorama">
+                                                            <div class="row mt-5">
+                                                                <div class="panel panel-flat">
+                                                                    <div class="panel-body">
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg1.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg1.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg2.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg2.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg3.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg3.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/avatar.png" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/avatar.png" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div> <div class="col-sm-4 mt-5">
+                                                                        <a href="../shared/images/bg1.jpg" data-fancybox="gallery">
+                                                                            <img alt="ray-image" src="../shared/images/bg1.jpg" class="x-ray-img">
+                                                                            <div class="text-center img-details">
+                                                                                <p>اشعه مقطعيه </p>
+                                                                                <p>22/06/1996</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg2.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg2.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg3.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg3.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/avatar.png" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/avatar.png" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane" id="photos">
+                                                            <div class="row mt-5">
+                                                                <div class="panel panel-flat">
+                                                                        <div class="text-center mt-5 operation-btn">
+                                                                            <button type="button" class="btn btn-sm btn-success " data-target=".addPhoto" data-toggle="modal">اضافه  </button>
+
+                                                                        </div>
+
+                                                                    <div class="panel-body">
+                                                                        <div class="row" id="before-search">
+                                                                            <div class="panel panel-flat open-folder">
+                                                                                <i class="icon-warning2">
+
+                                                                                </i>
+                                                                                <p class="text-center text-danger-700">لايوجد صور للمريض حاليا</p>
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg1.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg1.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg2.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg2.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg3.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg3.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/avatar.png" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/avatar.png" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div> <div class="col-sm-4 mt-5">
+                                                                        <a href="../shared/images/bg1.jpg" data-fancybox="gallery">
+                                                                            <img alt="ray-image" src="../shared/images/bg1.jpg" class="x-ray-img">
+                                                                            <div class="text-center img-details">
+                                                                                <p>اشعه مقطعيه </p>
+                                                                                <p>22/06/1996</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg2.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg2.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg3.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg3.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/avatar.png" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/avatar.png" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+                                                        <div class="tab-pane" id="analysis">
+                                                            <div class="row mt-5">
+                                                                <div class="panel panel-flat">
+                                                                        <div class="text-center mt-5 operation-btn">
+                                                                            <button type="button" class="btn btn-sm btn-success " data-target=".addAnalysis" data-toggle="modal">اضافه  </button>
+
+                                                                        </div>
+
+                                                                    <div class="panel-body">
+                                                                        <div class="row">
+                                                                            <div class="panel panel-flat open-folder">
+                                                                                <i class="icon-warning2">
+
+                                                                                </i>
+                                                                                <p class="text-center text-danger-700">لايوجد صور تحاليل حاليا</p>
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg1.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg1.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg2.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg2.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg3.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg3.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/avatar.png" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/avatar.png" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div> <div class="col-sm-4 mt-5">
+                                                                        <a href="../shared/images/bg1.jpg" data-fancybox="gallery">
+                                                                            <img alt="ray-image" src="../shared/images/bg1.jpg" class="x-ray-img">
+                                                                            <div class="text-center img-details">
+                                                                                <p>اشعه مقطعيه </p>
+                                                                                <p>22/06/1996</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg2.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg2.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/bg3.jpg" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/bg3.jpg" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="col-sm-4 mt-5">
+                                                                            <a href="../shared/images/avatar.png" data-fancybox="gallery">
+                                                                                <img alt="ray-image" src="../shared/images/avatar.png" class="x-ray-img">
+                                                                                <div class="text-center img-details">
+                                                                                    <p>اشعه مقطعيه </p>
+                                                                                    <p>22/06/1996</p>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+
+
+
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="tab-pane has-padding" id="plan">
+                                        <div class="panel panel-flat">
+                                            <div class="panel-heading text-right">
+                                                <h6 class="panel-title">
+                                                   الخطه العلاجيه
+                                                </h6>
+                                            </div>
+
+                                            <div class="panel-body">
+                                                <div class="row">
+
+                                                    <div class="col-md-12">
+                                                        <div class="tree-container">
+                                                            <div class="tree-parent row">
+                                                                <div class="col-sm-12">
+                                                                    <h5 class="parent-tree-header">
+                                                                        حشو 2 (filling 2)
+                                                                        <i class="icon-arrow-down32"></i>
+                                                                    </h5>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="child-container">
+                                                                <div class="row">
+                                                                    <div class="tree-child">
+                                                                        <div class="col-sm-6">
+                                                                            <h6>
+                                                                                وتد1
+                                                                            </h6>
+
+                                                                        </div>
+                                                                        <div class="col-sm-6 text-left">
+                                                                            <button class="btn btn-sm btn-success" data-target=".teeth-chart" data-toggle="modal">عرض</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="tree-child">
+                                                                        <div class="col-sm-6">
+                                                                            <h6>
+                                                                                وتد1
+                                                                            </h6>
+
+                                                                        </div>
+                                                                        <div class="col-sm-6 text-left">
+                                                                            <button class="btn btn-sm btn-success" data-target=".teeth-chart" data-toggle="modal">عرض</button>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="tab-pane has-padding" id="complaints">
+                                        <div class="panel panel-flat">
+                                            <div class="panel-heading text-right">
+                                                <h6 class="panel-title">
+                                                   الشكاوي
+                                                </h6>
+                                            </div>
+
+                                            <div class="panel-body">
+                                                <div class="row">
+
+                                                    <div class="col-md-12">
+                                                        <div class="tree-container">
+                                                            <div class="tree-parent row">
+                                                                <div class="col-sm-6">
+                                                                    <h5 class="parent-tree-header2">
+                                                                        21/09/2018
+                                                                        <i class="icon-arrow-down32"></i>
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="col-sm-6 text-left">
+                                                                    <button class="btn btn-sm btn-success" data-target=".action-modal" data-toggle="modal">الاجراءات</button>
+
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="child-container">
+                                                                <div class="row">
+                                                                    <div class="tree-child">
+                                                                        <div class="col-sm-9">
+
+                                                                            <p>
+                                                                                <span>التفاصيل :</span>
+                                                                            <span>تفصيل التفضصاسيمبيميبميبيبيبيبيبيبيبيبيبيبيبيبيبيبيبيبيبيب</span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="col-sm-3 text-left">
+                                                                            <span class="btn" data-target=".editDetails" data-toggle="modal"><i class="icon-pencil7"></i></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="tree-child">
+                                                                        <div class="col-sm-9">
+
+                                                                            <p>
+                                                                                <span>الاجراء المتخذ :</span>
+                                                                                <span>تفصيل التفضصاسيمبيميبميبيبيبيبيبيبيبيبيبيبيبيبيبيبيبيبيبيب</span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="col-sm-3 text-left">
+                                                                            <span class="btn" data-target=".editAction" data-toggle="modal"><i class="icon-pencil7"></i></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="tab-pane has-padding" id="notes">
+
+                                        <div class="panel panel-flat">
+                                            <div class="panel-heading">
+                                                <div class="row">
+                                                    <div class="col-sm-6 text-right">
+                                                        <h6 class="panel-title text-semibold">
+                                                            الملاحظات
+
+
+                                                        </h6>
+                                                    </div>
+                                                    <div class="col-sm-6 text-left operation-btn">
+
+                                                        <button type="button" class="btn btn-sm btn-success" data-target=".addNote" data-toggle="modal">اضافه </button>
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="panel-body">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <tbody>
+                                                        <tr class="active">
+                                                            <td colspan="2">
+                                                                <div>
+                                                                    <span >ملاحظه ملاحظهملاحظهملاحظهملاحظهملاحظه ملاحظهملاحظهملاحظهملاحظهملاحظه ملاحظهملاحظهملاحظهملاحظهملاحظه ملاحظهملاحظهملاحظهملاحظه</span>
+                                                                    <div class="row p-5 mt-5">
+                                                                        <div class="col-sm-6">
+                                                                            <i class="icon-calendar2"></i>
+                                                                            <span>31/09/1996</span>
+                                                                        </div>
+                                                                        <div class="col-sm-6">
+                                                                            <i class="icon-user"></i>
+                                                                            بواسطه:
+                                                                            <span>احمد محمد السيد</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+
+                                                        </tr>
+                                                        </tbody>
+
+
+
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</div>
+<!-- /page container -->
+
+<!-- Footer -->
+<div class="navbar navbar-default footer">
+
+    <div id="footer">
+        <div class="navbar-text">
+
+
+            <p>
+                جميع الحقوق محفوظه لتقنيه المعلومات | جامعه الدلتا
+                <span id="year"> </span></p>
+        </div>
+    </div>
+
+</div>
+
+<!-- /footer -->
+
+<div class="modal fade cases">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                        <i class="icon-cog6"></i> حالات المتابعه للخدمه </h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>م</th>
+                            <th>تاريخ المتابعه</th>
+                            <th>الوقت</th>
+                            <th>الحاله</th>
+                            <th>ملاحظات</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>25/02/1990</td>
+                            <td>10:30ص</td>
+                            <td>ملغيه</td>
+                            <td>تأخير عن المعمل</td>
+                        </tr> <tr>
+                            <td>1</td>
+                            <td>25/02/1990</td>
+                            <td>10:30ص</td>
+                            <td>ملغيه</td>
+                            <td>تأخير عن المعمل</td>
+                        </tr> <tr>
+                            <td>1</td>
+                            <td>25/02/1990</td>
+                            <td>10:30ص</td>
+                            <td>ملغيه</td>
+                            <td>تأخير عن المعمل</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+                    </b>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade teeth-chart">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content teeth-modal">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h3 class="text-center m-auto">
+                        مخطط الاسنان </h3>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form id="form">
+                        <fieldset id="SubmitForm">
+                            <div class="col-md-12">
+                                <div class="portlet box yellow myfont">
+                                    <div class="portlet-body">
+                                        <div class="scroller" style="height:auto" data-always-visible="1" data-rail-visible="1" data-rail-color="red" data-handle-color="green">
+                                            <div class="col-md-12 teeth-modal-table" id="teeth-table">
+                                                <div class="table-responsive">
+                                                    <table id="TableAdd">
+                                                        <thead></thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="centered">16</div>
+                                                                <span style="visibility:hidden" id="span1">*</span><img src="../shared/images/photo/1.png" id="img1" data-value="16"/>
+                                                                <ul class="circle" data-value="16">
+                                                                    <li class="quarter quarter1" value="1" data-active="false"></li>
+                                                                    <li class="quarter quarter2" value="2" data-active="false"></li>
+                                                                    <li class="quarter quarter3" value="3" data-active="false"></li>
+                                                                    <li class="quarter quarter4" value="4" data-active="false"></li>
+                                                                    <li class="rating" value="5" style="background-color:white" data-active="false"></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="centered">15</div>  <span style="visibility:hidden" id="span2">*</span><img src="../shared/images/photo/2.png" data-value="15"/>
+                                                                <ul class="circle" data-value="15">
+                                                                    <li class="quarter quarter1" value="1" data-active="false"></li>
+                                                                    <li class="quarter quarter2" value="2" data-active="false"></li>
+                                                                    <li class="quarter quarter3" value="3" data-active="false"></li>
+                                                                    <li class="quarter quarter4" value="4" data-active="false"></li>
+                                                                    <li class="rating" value="5" style="background-color:white" data-active="false"></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="centered">14</div> <span style="visibility:hidden" id="span3">*</span><img src="../shared/images/photo/3.png" data-value="14" />
+                                                                <ul class="circle" data-value="14">
+                                                                    <li class="quarter quarter1"  value="1"></li>
+                                                                    <li class="quarter quarter2"  value="2"></li>
+                                                                    <li class="quarter quarter3"  value="3"></li>
+                                                                    <li class="quarter quarter4"  value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="centered">13</div> <span style="visibility:hidden" id="span4">*</span><img src="../shared/images/photo/4.png" data-value="13" />
+                                                                <ul class="circle" data-value="13">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="centered">12</div><span style="visibility:hidden" id="span5">*</span><img src="../shared/images/photo/5.png" data-value="12" />
+                                                                <ul class="circle" data-value="12">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="centered">11</div><span style="visibility:hidden" id="span6">*</span><img src="../shared/images/photo/6.png" data-value="11" />
+                                                                <ul class="circle" data-value="11">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="centered">10</div><span style="visibility:hidden" id="span7">*</span><img src="../shared/images/photo/7.png" data-value="10" />
+                                                                <ul class="circle" data-value="10">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="centered">9</div><span style="visibility:hidden" id="span8">*</span><img src="../shared/images/photo/8.png" data-value="9" />
+                                                                <ul class="circle" data-value="9">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="centered">8</div><span style="visibility:hidden" id="span9">*</span><img src="../shared/images/photo/9.png" data-value="8" />
+                                                                <ul class="circle" data-value="8">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="centered">7</div><span style="visibility:hidden" id="span10">*</span><img src="../shared/images/photo/10.png" data-value="7" />
+                                                                <ul class="circle" data-value="7">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="centered">6</div><span style="visibility:hidden" id="span11">*</span><img src="../shared/images/photo/11.png" data-value="6" />
+                                                                <ul class="circle" data-value="6">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="centered">5</div><span style="visibility:hidden">*</span><img src="../shared/images/photo/12.png" data-value="5" />
+                                                                <ul class="circle" data-value="5">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="centered">4</div><span style="visibility:hidden">*</span><img src="../shared/images/photo/13.png" data-value="4" />
+                                                                <ul class="circle" data-value="4">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="centered">3</div><span style="visibility:hidden">*</span><img src="../shared/images/photo/14.png" data-value="3" />
+                                                                <ul class="circle" data-value="3">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="centered">2</div><span style="visibility:hidden">*</span><img src="../shared/images/photo/15.png" data-value="2" />
+                                                                <ul class="circle" data-value="2">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td>
+                                                                <div class="centered">1</div><span style="visibility:hidden">*</span><img src="../shared/images/photo/16.png" data-value="1" />
+                                                                <ul class="circle" data-value="1">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <ul class="circle" data-value="17">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                                <span style="visibility:hidden">*</span><img src="../shared/images/photo/17.png" data-value="17" /><div class="centered">17</div>
+                                                            </td>
+                                                            <td class="blur">
+
+                                                                <ul class="circle" data-value="18">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                                <span style="visibility:hidden">*</span><img src="../shared/images/photo/18.png" data-value="18" /><div class="centered">18</div>
+                                                            </td>
+                                                            <td>
+
+
+                                                                <ul class="circle" data-value="19">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                                <span style="visibility:hidden">*</span><img src="../shared/images/photo/19.png" data-value="19" /><div class="centered">19</div>
+                                                            </td>
+                                                            <td>
+
+                                                                <ul class="circle" data-value="20">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                                <span style="visibility:hidden">*</span><img src="../shared/images/photo/20.png" /><div class="centered">20</div>
+                                                            </td>
+                                                            <td>
+
+                                                                <ul class="circle" data-value="21">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                                <span style="visibility:hidden">*</span><img src="../shared/images/photo/21.png" data-value="21" /><div class="centered">21</div>
+                                                            </td>
+                                                            <td>
+
+                                                                <ul class="circle" data-value="22">
+                                                                    <li class="quarter quarter1"  value="1"></li>
+                                                                    <li class="quarter quarter2"  value="2"></li>
+                                                                    <li class="quarter quarter3"  value="3"></li>
+                                                                    <li class="quarter quarter4"  value="4"></li>
+                                                                    <li class="rating"  value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                                <span style="visibility:hidden">*</span><img src="../shared/images/photo/22.png" data-value="22" /><div class="centered">22</div>
+                                                            </td>
+                                                            <td>
+
+                                                                <ul class="circle" data-value="23">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                                <span style="visibility:hidden">*</span><img src="../shared/images/photo/23.png" data-value="23" /><div class="centered">23</div>
+                                                            </td>
+                                                            <td>
+
+                                                                <ul class="circle" data-value="24">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                                <span style="visibility:hidden">*</span><img src="../shared/images/photo/24.png" data-value="24" /><div class="centered">24</div>
+                                                            </td>
+                                                            <td>
+
+                                                                <ul class="circle" data-value="25">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                                <span style="visibility:hidden">*</span><img src="../shared/images/photo/25.png" data-value="25" /><div class="centered">25</div>
+                                                            </td>
+                                                            <td>
+
+                                                                <ul class="circle" data-value="26">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                                <span style="visibility:hidden">*</span><img src="../shared/images/photo/26.png" data-value="26" /><div class="centered">26</div>
+                                                            </td>
+                                                            <td>
+
+                                                                <ul class="circle" data-value="27">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                                <span style="visibility:hidden">*</span><img src="../shared/images/photo/27.png" data-value="27" /><div class="centered">27</div>
+                                                            </td>
+                                                            <td>
+
+                                                                <ul class="circle" data-value="28">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                                <span style="visibility:hidden">*</span><img src="../shared/images/photo/28.png" data-value="28"/> <div class="centered">28</div>
+                                                            </td>
+                                                            <td>
+
+                                                                <ul class="circle" data-value="29">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                                <span style="visibility:hidden">*</span><img src="../shared/images/photo/29.png" data-value="29" /><div class="centered">29</div>
+                                                            </td>
+                                                            <td>
+
+                                                                <ul class="circle" data-value="30">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                                <span style="visibility:hidden">*</span><img src="../shared/images/photo/30.png" data-value="30" /><div class="centered">30</div>
+                                                            </td>
+                                                            <td>
+
+                                                                <ul class="circle" data-value="31">
+                                                                    <li class="quarter quarter1"  value="1"></li>
+                                                                    <li class="quarter quarter2"  value="2"></li>
+                                                                    <li class="quarter quarter3"  value="3"></li>
+                                                                    <li class="quarter quarter4"  value="4"></li>
+                                                                    <li class="rating"  value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                                <span style="visibility:hidden">*</span><img src="../shared/images/photo/31.png" data-value="31" /><div class="centered">31</div>
+                                                            </td>
+                                                            <td>
+                                                                <ul class="circle" data-value="32">
+                                                                    <li class="quarter quarter1" value="1"></li>
+                                                                    <li class="quarter quarter2" value="2"></li>
+                                                                    <li class="quarter quarter3" value="3"></li>
+                                                                    <li class="quarter quarter4" value="4"></li>
+                                                                    <li class="rating" value="5" style="background-color:white"></li>
+                                                                </ul>
+                                                                <span style="visibility:hidden">*</span><img src="../shared/images/photo/32.png" data-value="32" /><div class="centered">32</div>
+
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+
+
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="row hidden" id="colors">
+                            <div class="col-sm-12 border-top colors-container">
+                                            <div class="colors row">
+                                                <div class="col-sm-3">
+                                                    <div class="rect black">
+
+                                                    </div>
+                                                    <p>قيد الانتظار</p>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="rect blue">
+
+                                                    </div>
+                                                    <p>قيد التنفيذ</p>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="rect green">
+
+                                                    </div>
+                                                    <p>انهاء</p>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="rect red">
+
+                                                    </div>
+                                                    <p>الغاء</p>
+                                                </div>
+                                            </div>
+
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+            <div class="modal-footer m-auto">
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>اغلاق
+
+                    </b>
+                </button>
+            </div>
+        </div>
+        <div class="modal-content hidden" id="tooth-details">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h3 class="text-center m-auto">
+                        التفاصيل</h3>
+                </div>
+
+
+            </div>
+            <div class="modal-body teeth-modal">
+
+                    <div class="row" >
+
+                        <div class="col-sm-8 colors">
+                            <ul>
+                                <li>
+                                    <div><span><i class="icon-file-text"></i> </span>التفاصيل:<p class="text-bold"> تفاصيل التفاصيل تفاصيل التفاصيل تفاصيل التفاصيل تفاصيل التفاصيل تفاصيل التفاصيل تفاصيل التفاصيل تفاصيل التفاصيل</p></div>
+
+                                </li>
+
+                                <li>
+                                    <div><span><i class="icon-calendar2"></i> </span>التاريخ:<p class="text-bold">11/09/2019</p></div>
+
+                                </li>
+                                <li>
+                                    <div><span><i class="icon-user"></i> </span>الدكتور المسئول:<p class="text-bold">ابراهيم السيد عبدالحميد</p></div>
+
+                                </li>
+                                <li>
+                                    <div>الحاله:
+                                        <div class="rect blue">
+
+                                        </div>
+                                        <p class="text-bold">قيد التنفيذ</p></div>
+
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="col-sm-4 details-image">
+                            <div class="text-center"> -  رقم السنه ( <span class="text-bold">3</span> ) -</div>
+                            <span style="visibility:hidden">*</span><img src="../shared/images/photo/1.png" data-value="16"/>
+                            <ul class="circle" data-value="16">
+                                <li class="quarter quarter1" value="1" data-active="false"></li>
+                                <li class="quarter quarter2" value="2" data-active="false"></li>
+                                <li class="quarter quarter3" value="3" data-active="false"></li>
+                                <li class="quarter quarter4" value="4" data-active="false"></li>
+                                <li class="rating" value="5" style="background-color:white" data-active="false"></li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+
+
+            </div>
+            <div class="modal-footer m-auto">
+                <button class="btn btn-sm btn-primary" id="returnBtnModal">
+                    <b>
+                        رجوع
+
+                    </b>
+                </button>
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>اغلاق
+
+                    </b>
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade addNote">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                        <i class="icon-plus2"></i> اضافه ملاحظه </h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+                <div class="form-group mt-15">
+                    <label>ملاحظه</label><br>
+                    <textarea cols="40" class="form-control text-area" rows="3" placeholder="اكتب الملاحظه"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm btn-success" type="submit">
+
+                    <b>حفظ
+                    </b>
+
+                </button>
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+                    </b>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade addPhoto">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                         <i class="icon-file-upload2"></i>
+                        اضافه صور للمريض
+                    </h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form action="#" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label >صور المريض </label>
+                        </div>
+                        <div class="form-group" id="rayImages">
+                            <label class="col-lg-2 control-label text-semibold">عرض الصور</label>
+                            <div class="col-lg-10">
+                                <input title="اختر الملفات" multiple="multiple" id="imgs" type="file" class="file-input-ajax">
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm btn-success btn-ladda btn-ladda-spinner" data-spinner-color="#fff" data-style="fade" type="submit">
+                   <span class="ladda-label">
+                    <b>حفظ
+                    </b>
+                   </span>
+                </button>
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+                    </b>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade addAnalysis">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                         <i class="icon-file-upload2"></i>
+                        اضافه صور تحاليل
+                    </h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form  action="#" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label >صور التحاليل </label>
+                        </div>
+                        <div class="form-group" >
+                            <label class="col-lg-2 control-label text-semibold">عرض الصور</label>
+                            <div class="col-lg-10">
+                                <input title="اختر الملفات" multiple="multiple" type="file" class="file-input-ajax">
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm btn-success btn-ladda btn-ladda-spinner" data-spinner-color="#fff" data-style="fade" type="submit">
+                   <span class="ladda-label">
+                    <b>حفظ
+                    </b>
+                   </span>
+                </button>
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+                    </b>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade editDetails">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                        <i class="icon-pencil7"></i> تعديل تفاصيل الشكوي </h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+                <div class="form-group mt-15">
+                    <label>التفاصيل</label><br>
+                    <textarea cols="40" class="form-control text-area" rows="3" placeholder="اكتب التفاصيل"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm btn-success" type="submit">
+
+                    <b>حفظ
+                    </b>
+
+                </button>
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+                    </b>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade editAction">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                        <i class="icon-pencil7"></i> تعديل الاجراء المتخذ </h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+                <div class="form-group mt-15">
+                    <label>الاجراء المتخذ</label><br>
+                    <textarea cols="40" class="form-control text-area" rows="3" placeholder="اكتب الاجراء المتخذ"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm btn-success" type="submit">
+
+                    <b>حفظ
+                    </b>
+
+                </button>
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+                    </b>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade action-modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                        <i class="icon-pencil7"></i> الاجراءات </h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="row mt-5">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="form-group">
+                            <label>حاله الشكوي: </label>
+
+                            <label class="radio-inline">
+                                <input type="radio" name="status" value="accept" class="styled">
+                                موافق
+                            </label>
+
+                            <label class="radio-inline">
+                                <input type="radio" name="status" value="reject" class="styled">
+                                رفض
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group mt-15">
+                    <label>الاجراء المتخذ</label><br>
+                    <textarea cols="40" class="form-control text-area" rows="3" placeholder="اكتب الاجراء المتخذ"></textarea>
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm btn-success" type="submit">
+
+                    <b>حفظ
+                    </b>
+
+                </button>
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+                    </b>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../shared/scripts/respond.min.js"></script>
+<script src="../shared/scripts/jquery.min.js"></script>
+<script src="assets/scripts/bootstrap.min.js"></script>
+<script src="../shared/scripts/drilldown.js"></script>
+<script src="../shared/scripts/nicescroll.min.js"></script>
+<script src="assets/scripts/app.min.js"></script>
+<script src="assets/scripts/layout_navbar_secondary_fixed.js"></script>
+<script>
+    $("#year").text(new Date().getFullYear() +' ©');
+
+</script>
+
+
+<script src="assets/scripts/table_responsive.js"></script>
+
+<script type="text/javascript" src="assets/scripts/select2.min.js"></script>
+<script type="text/javascript" src="assets/scripts/uniform.min.js"></script>
+
+<script type="text/javascript" src="assets/scripts/form_layouts.js"></script>
+<script type="text/javascript" src="assets/scripts/pace.min.js"></script>
+<script type="text/javascript" src="assets/scripts/spin.min.js"></script>
+
+<script type="text/javascript" src="assets/scripts/ladda.min.js"></script>
+<script type="text/javascript" src="assets/scripts/components_buttons.js"></script>
+<script src="assets/scripts/fileinput.min.js"></script>
+
+<script src="assets/scripts/footable.min.js"></script>
+
+<script type="text/javascript" src="assets/scripts/blockui.min.js"></script>
+<script type="text/javascript" src="assets/scripts/core.min.js"></script>
+<script type="text/javascript" src="../shared/scripts/bootstrap-datepicker.min.js"></script>
+
+<script type="text/javascript" src="assets/scripts/components_loaders.js"></script>
+<script type="text/javascript" src="assets/scripts/timelines.js"></script>
+<script type="text/javascript" src="../shared/scripts/jquery.fancybox.min.js"></script>
+<script src="assets/scripts/fileinput.js"></script>
+<script src="assets/scripts/uploader_bootstrap.js"></script>
+<script src="assets/scripts/patient.js"></script>
+</body>
+</html>

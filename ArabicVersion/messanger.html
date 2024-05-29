@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مستشفي طب الاسنان | الرسائل</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- IE Compatibility meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../shared/images/favicon.png">
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/core.min.css">
+    <link rel="stylesheet" href="../shared/styles/colors.min.css">
+    <link rel="stylesheet" href="assets/styles/components.min.css">
+    <link rel="stylesheet" href="../shared/styles/ballon.css">
+    <link rel="stylesheet" href="../shared/styles/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="../shared/icons/icomoon/styles.css">
+    <link rel="stylesheet" href="assets/styles/messanger.css">
+</head>
+<body class="navbar-bottom" id="top">
+
+<!-- Page header -->
+<div class="page-header page-header-inverse">
+    <!-- Main navbar -->
+    <div class="navbar navbar-inverse navbar-transparent">
+        <div class="navbar-header" id="navbar-mobile">
+            <h2 class="navbar-brand">مستشفي طب الاسنان والفم </h2>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown language-switch">
+                    <a class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span>
+                        <img src="../shared/images/eg.png" alt="" class="position-left">
+                        عربي
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="english"><img src="../shared/images/us.png" alt=""> English</a></li>
+                        <li><a class="arabic"><img src="../shared/images/eg.png" alt=""> عربي</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="../shared/images/avatar.png" alt="">
+                        <span>احمد</span>
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class=" icon-key"></i> تغيير كلمه المرور</a></li>
+                        <li><a href="#"><i class="icon-switch2"></i> تسجيل خروج</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+
+
+    <!-- /page header content -->
+
+
+    <div class="navbar navbar-inverse navbar-transparent" id="navbar-second">
+        <ul class="nav navbar-nav no-border visible-xs-block">
+            <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second-toggle"><i class="icon-menu7"></i></a></li>
+        </ul>
+
+        <div class="navbar-collapse collapse" id="navbar-second-toggle">
+            <ul class="nav navbar-nav navbar-nav-material">
+                <li><a href="">الرئيسيه</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">المرضي <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class=" icon-user-plus"></i> اضافه مريض</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="icon-list"></i> عرض المرضي</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        الموظفين <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class=" icon-user-plus"></i> اضافه موظف</a>
+                        </li>
+                        <li class="dropdown-submenu active">
+                            <a href="#"><i class="icon-list"></i> عرض الموظفين</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        اعدادات العيادات <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">الاماكن</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">الاقسام</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">تخصصات الاقسام</a>
+                        </li> <li class="dropdown-submenu">
+                        <a href="#">سعه العياده</a>
+                    </li> <li class="dropdown-submenu">
+                        <a href="#">الوظائف</a>
+                    </li> <li class="dropdown-submenu">
+                        <a href="#">الامراض</a>
+                    </li> <li class="dropdown-submenu">
+                        <a href="#">الخدمات</a>
+                    </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        التحويلات <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">التحويلات بين العيادات</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">قائمه المرضي</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        الاشعه<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">طلب اشعه بانوراما</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">اضافه اشعه اكس</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">اضافه اشعه بانوراما</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">عرض كل الاشعه</a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+<!-- /page header -->
+
+
+<!-- Page container -->
+
+<div class="page-container">
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-main sidebar-default" >
+            <div class="sidebar-content">
+
+                <!-- Main navigation -->
+                <div class="sidebar-category sidebar-category-visible">
+                    <div class="category-title h6">
+                        <span>
+                        <i class="icon-bubbles position-left"></i>كل الرسائل
+                        </span>
+                    </div>
+                    <div class="category-content no-padding">
+                        <ul class="navigation navigation-main navigation-accordion p-10">
+                            <div id="contentArea">
+                                <div class="_4-u2 mbm _2iwp">
+                                    <div class="_2iwo">
+                                        <div class="_2iwq">
+                                            <div class="_2iwr"></div>
+                                            <div class="_2iws"></div>
+                                            <div class="_2iwt"></div>
+                                            <div class="_2iwu"></div>
+                                            <div class="_2iwv"></div>
+                                            <div class="_2iww"></div>
+                                            <div class="_2iwx"></div>
+                                            <div class="_2iwy"></div>
+                                            <div class="_2iwz"></div>
+                                            <div class="_2iw-"></div>
+                                            <div class="_2iw_"></div>
+                                            <div class="_2ix0"></div>
+                                        </div>
+                                    </div>
+                                    <div class="_2iwo">
+                                        <div class="_2iwq">
+                                            <div class="_2iwr"></div>
+                                            <div class="_2iws"></div>
+                                            <div class="_2iwt"></div>
+                                            <div class="_2iwu"></div>
+                                            <div class="_2iwv"></div>
+                                            <div class="_2iww"></div>
+                                            <div class="_2iwx"></div>
+                                            <div class="_2iwy"></div>
+                                            <div class="_2iwz"></div>
+                                            <div class="_2iw-"></div>
+                                            <div class="_2iw_"></div>
+                                            <div class="_2ix0"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <li class="media">
+                                <div class="media-left">
+                                    <a href="#" class="btn btn-rounded btn-icon btn-xs">
+                                        <img class="pointer" title="احمد علي احمد علي" alt="avatar" src="../shared/images/bg3.jpg">
+                                        <span class="status online" title=" نشط"><i class="icon-circle2"></i> </span>
+                                    </a>
+                                </div>
+
+                                <div class="media-body">
+                                    <a href="#" class="media-heading">
+                                        <span class="text-semibold user-name">احمد علي</span>
+                                        <span class="media-annotation pull-right">
+                                            04:58 ص
+                                        </span>
+
+                                    </a>
+
+                                    <span class="text-muted"><span class="message-status message-seen"><i class="icon-checkmark2"></i><i class="icon-checkmark2"></i></span><span class="last-message">رساله رساله رسصالهرساله رساله رسصالهرساله رساله رسصاله</span>
+                                                                        <span class="status-mark" title="تعيين كقروءه"></span>
+
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="media">
+                                <div class="media-left">
+                                    <a href="#" class="btn btn-rounded btn-icon btn-xs">
+                                        <img class="pointer" title="احمد علي احمد علي" alt="avatar" src="../shared/images/avatar.png">
+                                        <span class="status"></span>
+
+                                    </a>
+                                </div>
+
+                                <div class="media-body">
+                                    <a href="#" class="media-heading">
+                                        <span class="text-semibold user-name">احمد محي</span>
+                                        <span class="media-annotation pull-right">
+                                            04:58 ص
+                                        </span>
+
+                                    </a>
+
+                                    <span class="text-muted"><span class="message-status"><i class="icon-checkmark2"></i><i class="icon-checkmark2"></i></span><span class="last-message">هذا نص يمكن ان يبدل فيما بعد او يستبدل بنص حقيقي واقعي</span>
+                                        <span class="status-mark mark-read" title="تعيين كغير كقروءه"></span>
+</span>
+                                </div>
+                            </li>
+                            <li class="media">
+                                <div class="media-left">
+                                    <a href="#" class="btn btn-rounded btn-icon btn-xs">
+                                        <img class="pointer" title="احمد علي احمد علي" alt="avatar" src="../shared/images/bg3.jpg">
+                                        <span class="status online" title="نشط"><i class="icon-circle2"></i> </span>
+                                    </a>
+                                </div>
+
+                                <div class="media-body">
+                                    <a href="#" class="media-heading">
+                                        <span class="text-semibold user-name">احمد علي</span>
+                                        <span class="media-annotation pull-right">
+                                            04:58 ص
+                                        </span>
+
+                                    </a>
+
+                                    <span class="text-muted"><span><i class="icon-checkmark2"></i></span><span class="last-message">رساله رساله رسصالهرساله رساله رسصالهرساله رساله رسصاله</span>
+                                    <span class="status-mark" title="تعيين كقروءه"></span>
+                                    </span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- /main navigation -->
+
+            </div>
+        </div>
+        <!-- /main sidebar -->
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Table -->
+            <div class="panel panel-flat">
+                <div class="panel-heading">
+
+                    <h5 class="text-bold panel-title border-bottom-blue">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <a href="#" class="btn current-container">
+                                    <img id="user-active-img" alt="avatar" src="../shared/images/bg1.jpg">
+                                    <span id="user-active-name" class="ml-5">احمد علي السيد</span>
+                                    <span id="user-active-status" class="status status-chat online">
+                                        <span id="active">
+                                               <i class="icon-circle2"></i>
+                                        </span>
+                                        <span id="offline" class="hidden text-grey"></span>
+
+                                    </span>
+
+
+                                </a>
+                            </div>
+                            <div class="col-sm-2">
+                            </div>
+                        </div>
+
+                    </h5>
+                </div>
+
+                <div class="panel-body">
+                    <div class="pace-demo hidden" id="loader-content">
+                        <div class="theme_tail theme_tail_with_text"><div class="pace_progress" data-progress="60" style="width: 60%;"></div><div class="pace_activity"></div></div>
+                    </div>
+                    <ul class="media-list chat-list">
+                        <!---------------loader ------------------------------------>
+                        <div class="pace-demo" id="loader-content-2">
+                            <div class="theme_tail theme_tail_with_text"><div class="pace_progress" data-progress="60" style="width: 60%;"></div><div class="pace_activity"></div></div>
+                        </div>
+                        <li class="media date-step">
+                            <span>10 فبراير</span>
+                        </li>
+
+                        <li class="media">
+                            <div class="media-left">
+                                <a>
+                                    <img src="../shared/images/avatar.png" class="img-circle" alt="">
+                                </a>
+                            </div>
+
+                            <div class="media-body">
+                                <div class="media-content">
+                                    Below mounted advantageous spread yikes bat stubbornly crud a and a excepting<br>
+                                <a href="#">File.txt</a>
+                                </div>
+                                <span class="media-annotation display-block mt-10">9:54 am </span>
+                            </div>
+                        </li>
+
+                        <li class="media reversed">
+                            <div class="media-body">
+                                <div class="media-content">Far squid and that hello fidgeted and when. As this oh darn but slapped casually husky sheared that cardinal hugely one and some unnecessary factiously hedgehog a feeling one rudely much but one owing sympathetic regardless more astonishing evasive tasteful much.</div>
+                                <span class="media-annotation display-block mt-10"> 10:24 am </span>
+                            </div>
+
+                            <div class="media-right">
+                                <a href="#">
+                                    <img src="../shared/images/avatar.png" class="img-circle" alt="">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="media reversed">
+                            <div class="media-body">
+                                <div class="media-content">
+                                    <a href="../shared/images/bg1.jpg" data-fancybox="gallery">
+                                        <img alt="ray-image" src="../shared/images/bg1.jpg" class="x-ray-img">
+                                    </a>
+                                    <a href="../shared/images/bg2.jpg" data-fancybox="gallery">
+                                        <img alt="ray-image" src="../shared/images/bg2.jpg" class="x-ray-img">
+                                    </a>
+                                    <a href="../shared/images/bg3.jpg" data-fancybox="gallery">
+                                        <img alt="ray-image" src="../shared/images/bg3.jpg" class="x-ray-img">
+                                    </a> <a href="../shared/images/bg1.jpg" data-fancybox="gallery">
+                                    <img alt="ray-image" src="../shared/images/bg1.jpg" class="x-ray-img">
+                                </a>
+                                    <a href="../shared/images/bg2.jpg" data-fancybox="gallery">
+                                        <img alt="ray-image" src="../shared/images/bg2.jpg" class="x-ray-img">
+                                    </a>
+                                    <a href="../shared/images/bg3.jpg" data-fancybox="gallery">
+                                        <img alt="ray-image" src="../shared/images/bg3.jpg" class="x-ray-img">
+                                    </a>
+                                </div>
+                                <span class="media-annotation display-block mt-10"> 10:24 am </span>
+                            </div>
+
+                            <div class="media-right">
+                                <a href="#">
+                                    <img src="../shared/images/avatar.png" class="img-circle" alt="">
+                                </a>
+                            </div>
+                        </li>
+
+
+
+
+
+
+                    </ul>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form>
+                                <textarea id="message-content" name="enter-message" class="form-control content-group" rows="3" cols="1" placeholder="اكتب رساله..."></textarea>
+                                <button type="button" id="send-btn" class="btn btn-rounded"><img src="../shared/images/send.png"></button>
+                                <ul class="icons-list icons-list-extended mt-10 text-left">
+                                    <li><a data-target=".addPhotos" data-toggle="modal" data-popup="tooltip" title="ارسل صوره" data-container="body"><i class="icon-file-picture"></i></a></li>
+                                    <li>
+                                        <label data-target=".addFile" data-toggle="modal" data-popup="tooltip" title="ارسل ملف" data-container="body" class="custom-file-upload">
+                                            <i class="icon-file-plus"></i>
+                                        </label>
+                                    </li>
+
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+            <!-- /table -->
+
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!--/page content-->
+    <!-- Footer -->
+    <div class="navbar navbar-default footer">
+
+        <div id="footer">
+            <div class="navbar-text">
+
+
+                <p>
+                    جميع الحقوق محفوظه لتقنيه المعلومات | جامعه الدلتا
+                    <span id="year"> </span></p>
+            </div>
+        </div>
+
+    </div>
+    <!-- /footer -->
+</div>
+<div class="modal fade addPhotos">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                        رفع صور جديده <i class="icon-file-upload2"></i></h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form action="#" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label >صور جديده: </label>
+                        </div>
+                        <div class="form-group" id="rayImages">
+                            <label class="col-lg-2 control-label text-semibold">عرض الصور</label>
+                            <div class="col-lg-10">
+                                <input title="اختر الملفات" multiple="multiple" id="imgs" type="file" class="file-input-ajax">
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+                    </b>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade addFile">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                        رفع ملف <i class="icon-file-upload2"></i></h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form action="#" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label >ملف جديد: </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label text-semibold">عرض الملف</label>
+                            <div class="col-lg-10">
+                                <input title="اختر الملفات" type="file" class="file-input">
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+                    </b>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../shared/scripts/respond.min.js"></script>
+<script src="../shared/scripts/jquery.min.js"></script>
+<script src="assets/scripts/bootstrap.min.js"></script>
+<script src="../shared/scripts/drilldown.js"></script>
+<script src="../shared/scripts/nicescroll.min.js"></script>
+<script src="assets/scripts/app.min.js"></script>
+<script src="assets/scripts/layout_navbar_secondary_fixed.js"></script>
+<script>
+    $("#year").text(new Date().getFullYear() +' ©');
+
+</script>
+<script src="assets/scripts/fileinput.js"></script>
+<script src="assets/scripts/uploader_bootstrap.js"></script>
+<script src="assets/scripts/footable.min.js"></script>
+<script src="assets/scripts/table_responsive.js"></script>
+<script type="text/javascript" src="assets/scripts/spin.min.js"></script>
+<script type="text/javascript" src="assets/scripts/ladda.min.js"></script>
+<script type="text/javascript" src="assets/scripts/select2.min.js"></script>
+
+<script type="text/javascript" src="assets/scripts/form_layouts.js"></script>
+<script type="text/javascript" src="assets/scripts/uniform.min.js"></script>
+
+
+<script type="text/javascript" src="assets/scripts/components_buttons.js"></script>
+<script type="text/javascript" src="assets/scripts/core.min.js"></script>
+
+
+<script type="text/javascript" src="assets/scripts/components_loaders.js"></script>
+<script type="text/javascript" src="assets/scripts/chat_layouts.js"></script>
+<script type="text/javascript" src="../shared/scripts/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="../shared/scripts/jquery.drilldown.min.js"></script>
+
+<script src="assets/scripts/messanger.js"></script>
+
+</body>
+</html>

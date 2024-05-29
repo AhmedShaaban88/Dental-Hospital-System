@@ -1,0 +1,88 @@
+table{
+    font-size: 15px;
+}
+table tr{
+    cursor: pointer;
+}
+table th{
+    font-weight: bold;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    padding: 12px 12px;
+}
+.table-responsive{
+    overflow-x: visible;
+}
+.table-content{
+    padding: 0;
+}
+#tableCount{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.72);
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    z-index: 9999;
+    transition: 0.3s ease;
+}
+
+.caret:after {
+    content: '\e9c1';
+    display: block;
+    font-size: 14px;
+    width: 16px;
+    line-height: 1;
+    cursor: pointer;
+}
+.sorted:after{
+    content: '\e9c2';
+    display: block;
+    font-size: 14px;
+    width: 16px;
+    line-height: 1;
+    cursor: pointer;
+}
+.select2-selection--single{
+    height: 42px;
+}
+td > a{
+    display: block;
+    white-space: nowrap;
+    width: 130px;
+    overflow: visible;
+    text-overflow: ellipsis;
+}
+@media screen and (min-width: 1200px){
+    td > a{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1025px) and (min-width: 768px){
+    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+        padding: 12px 5px;
+    }
+}
+
+
+@media screen and (max-width: 993px) and (min-width: 768px) {
+    .table .caret{
+        display: none;
+    }
+    table{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    td > a{
+        width: auto;
+    }
+    .table-responsive{
+        overflow-y: auto!important;
+    }
+}

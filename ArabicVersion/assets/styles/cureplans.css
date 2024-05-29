@@ -1,0 +1,204 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+/*******************************************************************/
+.date-caret{
+    position: absolute;
+    left: 17px;
+    top: 40px;
+    color: grey;
+}
+.ranges{
+    padding: 10px;
+}
+.daterangepicker .calendar{
+    max-width: 386px;
+    padding: 0;
+}
+.circle {
+    position: relative;
+    border: 1px solid black;
+    padding: 0;
+    margin: 1em auto;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    list-style: none;
+    overflow: hidden;
+}
+
+.quarter {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+    /*box-shadow:0px 0px 15px rgba(0,0,0,0.7);*/
+}
+
+.quarter1 {
+    top: 0;
+    left: 0;
+    /*background-color:red;*/
+    border-radius: 100% 0 0 0;
+    border: 1px solid black;
+}
+
+.quarter2 {
+    top: 0;
+    right: 0;
+    /*background-color:blue;*/
+    border-radius: 0 100% 0 0;
+    border: 1px solid black;
+}
+
+.quarter3 {
+    bottom: 0;
+    left: 0;
+    /*background-color:orange;*/
+    border-radius: 0 0 0 100%;
+    border: 1px solid black;
+}
+
+.quarter4 {
+    bottom: 0;
+    right: 0;
+    /*background-color:green;*/
+    border-radius: 0 0 100% 0;
+    border: 1px solid black;
+}
+
+.rating {
+    width: 10px;
+    height: 20px;
+    padding-left: 28px;
+    border-radius: 10px !important;
+    position: absolute;
+    z-index: 5;
+    top: 13px;
+    left: 8px;
+    border: 1px solid black;
+    float: right;
+}
+
+.starshow {
+    color: red;
+    font-size: 30px;
+}
+
+.rating {
+    border-radius: 15px;
+    overflow: hidden;
+    perspective: 1px;
+}
+
+.imgBorder {
+    box-shadow: 0 0 2px 3px black;
+}
+
+.centered {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+}
+
+.divSteps {
+    padding-right: 230px;
+    padding-top: 50px;
+    color: red;
+    font-size:20px;
+}
+
+.blur{
+    filter: blur(2px);
+}
+.desc-circle{
+    list-style-type: decimal;
+    direction: ltr;
+    padding-top: 28px;
+}
+.desc-circle li{
+    font-weight: bold;
+}
+.desc-circle li:first-letter{
+    color: red;
+}
+.circle-show{
+    font-size: 29px;
+    text-align: center;
+}
+.rating-1{
+    width: 35px;
+    height: 40px;
+    padding-left: 0;
+    border-radius: 32px !important;
+    position: absolute;
+    z-index: 5;
+    top: 20px;
+    text-align: center;
+    left: 25px;
+    border: 1px solid black;
+    float: right;
+}
+
+@media screen and (max-width: 993px) and (min-width: 769px){
+    #TableAdd, #TableAdd-2{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 870px) and (min-width: 769px){
+    .desc-table > p{
+        width: 50px;
+    }
+    .circle-show{
+        margin: 1em 0;
+    }
+    #TableAdd img{
+        width: 41px;
+    }
+    .teeth-modal{
+        padding: 10px;
+    }
+}
+
+@media (min-width: 769px){
+    .modal-dialog:first-child {
+        width: 900px;
+    }
+
+}
+
+@media (max-width: 769px){
+    .desc-table > p{
+        width: auto;
+    }
+    #editChart{
+        width: 350px;
+    }
+    .text-area:last-child{
+        width: 90%;
+    }
+    .desc-circle{
+        padding-top: 0;
+        list-style-position: inside;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1025px) and (min-width: 768px){
+    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+        padding: 12px 4px;
+    }
+}
+@media screen and (max-width: 600px){
+    .daterangepicker .table-condensed tr>td, .daterangepicker .table-condensed tr>th, .table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th{
+        padding: 0;
+    }
+    .daterangepicker.opensleft:after, .daterangepicker.opensleft:before{
+        display: none;
+    }
+}
+@media (min-width: 564px){
+    .daterangepicker .calendar, .daterangepicker .ranges, .daterangepicker.single .calendar, .daterangepicker.single .ranges {
+        float: right;
+    }
+}

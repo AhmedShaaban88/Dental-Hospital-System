@@ -1,0 +1,19 @@
+@import "shared.css";
+@import "style.css";
+
+/******************************************************************/
+.ui-pnotify-sticker{
+    display: none;
+}
+.datepicker {
+    width: 440px;
+}
+#adult{
+    position: absolute;
+    bottom: 7px;
+    left: 10px;
+    font-weight: bold;
+}
+.spineer-select{
+    left: -70px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>مستشفي طب الاسنان | تسجيل الدخول</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- IE Compatibility meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="../ArabicVersion/assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../ArabicVersion/assets/styles/core.min.css">
+    <link rel="stylesheet" href="styles/colors.min.css">
+    <link rel="stylesheet" href="../ArabicVersion/assets/styles/components.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="styles/animate.min.css">
+    <link rel="stylesheet" href="icons/icomoon/styles.css">
+</head>
+<body class="navbar-bottom login-container">
+
+<!-- Page container -->
+<div class="page-container">
+    <div class="page-container-overlay"></div>
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Simple login form -->
+            <form action="" method="" class="login-form animated fadeInDown">
+                <div class="panel panel-body">
+                    <div class="text-center">
+                        <div class="icon-object border-slate-300 text-slate-300"><i class="icon-user"></i></div>
+                        <h5 class="content-group"> <b>تسجيل الدخول</b></h5>
+                    </div>
+
+                    <div class="form-group has-feedback has-feedback-left">
+                        <input type="text" class="form-control text-left text-black" placeholder="اسم المستخدم">
+                        <div class="form-control-feedback">
+                            <i class="icon-user text-muted"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group has-feedback has-feedback-left">
+                        <input id="passwordInput" type="password" class="form-control text-left text-black" placeholder="كلمه المرور">
+                        <span class="eye">
+                            <i class="icon-eye-blocked text-muted position-left"></i>
+
+                            </span>
+                        <div class="form-control-feedback">
+
+                        <i class="icon-lock2 text-muted"></i>
+
+                    </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn bg-pink-400 btn-block">تسجيل دخول <i class="icon-circle-right2 position-right"></i></button>
+                    </div>
+                    <!------error------
+                    <p class="text-center text-danger-800">اسم المستخدم او كلمه المرور غير صحيح</p>
+                    --------->
+                </div>
+            </form>
+            <!-- /login form -->
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</div>
+<!-- /page container -->
+
+
+<!-- Footer -->
+<div class="navbar navbar-default footer">
+
+    <div id="footer">
+        <div class="navbar-text">
+
+
+             <p><span id="year"> </span>
+             جميع الحقوق محفوظه لتقنيه المعلومات | جامعه الدلتا
+             </p>
+        </div>
+
+    </div>
+</div>
+<!-- /footer -->
+
+<script src="../shared/scripts/jquery.min.js"></script>
+<script src="../ArabicVersion/assets/scripts/bootstrap.min.js"></script>
+<script src="../shared/scripts/drilldown.js"></script>
+<script src="../shared/scripts/nicescroll.min.js"></script>
+<script src="../ArabicVersion/assets/scripts/app.min.js"></script>
+<script src="scripts/animations_css3.js"></script>
+<script>
+    $("#year").text('© ' +  new Date().getFullYear());
+    $(document).ready(function () {
+        var eye = $(".eye:first i");
+        var password = $("#passwordInput");
+        eye.click(function () {
+            if(eye.hasClass('icon-eye-blocked')) {
+                eye.removeClass('icon-eye-blocked').addClass('icon-eye');
+                password.attr('type', 'text');
+            }else{
+                eye.removeClass('icon-eye').addClass('icon-eye-blocked');
+                password.attr('type', 'password');
+            }
+        });
+
+    });
+
+</script>
+</body>
+</html>

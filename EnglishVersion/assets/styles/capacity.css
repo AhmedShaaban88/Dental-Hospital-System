@@ -1,0 +1,12 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+
+
+/*******************************************************************/
+.datepicker {
+    width: 460px;
+}
+.mdtimepicker {
+    direction: ltr;
+}

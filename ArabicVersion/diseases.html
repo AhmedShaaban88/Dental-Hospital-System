@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مستشفي طب الاسنان | الامراض</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- IE Compatibility meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../shared/images/favicon.png">
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/core.min.css">
+    <link rel="stylesheet" href="../shared/styles/colors.min.css">
+    <link rel="stylesheet" href="assets/styles/components.min.css">
+    <link rel="stylesheet" href="../shared/icons/icomoon/styles.css">
+    <link rel="stylesheet" href="assets/styles/diseases.css">
+</head>
+<body class="navbar-bottom" id="top">
+
+<!--- Page header --->
+<div class="page-header page-header-inverse">
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-inverse navbar-transparent">
+        <div class="navbar-header" id="navbar-mobile">
+            <h2 class="navbar-brand">مستشفي طب الاسنان والفم </h2>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown language-switch">
+                    <a class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span>
+                        <img src="../shared/images/eg.png" alt="" class="position-left">
+                        عربي
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="english"><img src="../shared/images/us.png" alt=""> English</a></li>
+                        <li><a class="arabic"><img src="../shared/images/eg.png" alt=""> عربي</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="../shared/images/avatar.png" alt="">
+                        <span>احمد</span>
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class=" icon-key"></i> تغيير كلمه المرور</a></li>
+                        <li><a href="#"><i class="icon-switch2"></i> تسجيل خروج</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+
+
+    <!-- /page header content -->
+
+
+    <div class="navbar navbar-inverse navbar-transparent" id="navbar-second">
+        <ul class="nav navbar-nav no-border visible-xs-block">
+            <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second-toggle"><i class="icon-menu7"></i></a></li>
+        </ul>
+
+        <div class="navbar-collapse collapse" id="navbar-second-toggle">
+            <ul class="nav navbar-nav navbar-nav-material">
+                <li><a href="">الرئيسيه</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">المرضي <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class=" icon-user-plus"></i> اضافه مريض</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="icon-list"></i> عرض المرضي</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        الموظفين <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class=" icon-user-plus"></i> اضافه موظف</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="icon-list"></i> عرض الموظفين</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        اعدادات العيادات <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">الاماكن</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">الاقسام</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">تخصصات الاقسام</a>
+                        </li> <li class="dropdown-submenu">
+                        <a href="#">سعه العياده</a>
+                    </li> <li class="dropdown-submenu">
+                        <a href="#">الوظائف</a>
+                    </li> <li class="dropdown-submenu active">
+                        <a href="#">الامراض</a>
+                    </li> <li class="dropdown-submenu">
+                        <a href="#">الخدمات</a>
+                    </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        التحويلات <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">التحويلات بين العيادات</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">قائمه المرضي</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        الاشعه<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">طلب اشعه بانوراما</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">اضافه اشعه اكس</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">اضافه اشعه بانوراما</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">عرض كل الاشعه</a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+<!-- /page header -->
+
+
+<!-- Page container -->
+<div class="page-container">
+
+    <div class="page-content">
+
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+            <!-- Table -->
+            <div class="panel panel-flat">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h5 class="text-bold panel-title border-bottom-blue">
+                                <i class="icon-list position-left"></i>
+                                الامراض
+                            </h5>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group text-left operation-btn">
+                                <button type="button" class="btn btn-sm btn-success " id="newDisease" data-target=".addDiseases" data-toggle="modal">اضافه </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="panel-body table-content">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>
+                                    <span>م</span>
+                                    <span class="caret"></span>
+                                </th>
+                                <th>
+                                    <span>اسم المرض بالعربي</span>
+                                    <span class="caret"></span>
+                                </th>
+                                <th>
+                                    <span>اسم المرض بالانجليزي</span>
+                                    <span class="caret"></span>
+                                </th>
+                                <th class="text-center">الاجراءات
+
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>حشو</td>
+                                <td>Hashw</td>
+                                <td class="text-center">
+                                    <div class="btn-group">
+                                        <span class="dropdown-toggle operation-dropdown" data-toggle="dropdown">  <span class="icon-menu9"></span></span>
+
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li>
+                                                <a  data-target=".addDiseases" data-toggle="modal"><i class="icon-pencil7 position-left"></i> تعديل</a>
+                                            </li>
+                                            <li>
+                                                <a data-target=".addDiseases" data-toggle="modal"><i class="icon-trash-alt position-left"></i> حذف</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </td>
+                            </tr>
+
+
+
+                            </tbody>
+
+
+                            <div>
+                                <p class="text-center" id="tableCount">
+                                    <span>1</span> الي <span>40</span> من <span>250</span> مرض
+                                    <a href="#top" id="goTop">
+                                        <i class="icon-chevron-up"></i>
+                                    </a>
+                                </p>
+
+                            </div>
+
+                        </table>
+                        <!---------------loader ------------------------------------>
+                        <div class="pace-demo">
+                            <div class="theme_tail theme_tail_with_text"><div class="pace_progress" data-progress="60" style="width: 60%;"></div><div class="pace_activity"></div></div>
+                        </div>
+                        <!-----------/loader ------------------>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- /table -->
+
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+
+</div>
+<!-- /page container -->
+<!-- Footer -->
+<div class="navbar navbar-default footer">
+
+    <div id="footer">
+        <div class="navbar-text">
+
+
+            <p>
+                جميع الحقوق محفوظه لتقنيه المعلومات | جامعه الدلتا
+                <span id="year"> </span></p>
+        </div>
+    </div>
+
+</div>
+<!-- /footer -->
+
+<div class="modal fade addDiseases">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" id="newDiseaseModal">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                          <i class="icon-plus2"></i> اضافه مرض </h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form id="diseasesForm" action="#">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="arabicName" class="control-label text-semibold"> اسم المرض بالعربي <span class="required">*</span></label>
+                                <div>
+                                    <input id="arabicName" type="text" class="form-control">
+                                </div>
+                                <small class="help hidden"><i class="icon-cancel-circle2"></i>اسم المرض بالعربي مطلوب </small>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="englishName" class="control-label text-semibold"> اسم المرض بالانجليزي <span class="required">*</span></label>
+                                <div>
+                                    <input id="englishName" type="text" class="form-control">
+                                </div>
+                                <small class="help hidden"><i class="icon-cancel-circle2"></i>اسم المرض بالانجليزي مطلوب </small>
+
+                            </div>
+                        </div>
+
+
+
+                    </form>
+                </div>
+
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm btn-success btn-ladda btn-ladda-spinner" data-spinner-color="#fff" data-style="fade" type="submit" form="diseasesForm">
+                   <span class="ladda-label">
+                    <b>حفظ
+
+                    </b>
+                   </span>
+                </button>
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+
+                    </b>
+                </button>
+            </div>
+        </div>
+        <div class="modal-content" id="editDiseaseModal">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                        <i class="icon-pencil7"></i> تعديل مرض </h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form id="editDesForm" action="#">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="arabicNameEdit" class="control-label text-semibold"> اسم المرض بالعربي <span class="required">*</span></label>
+                                <div>
+                                    <input id="arabicNameEdit" type="text" class="form-control">
+                                </div>
+                                <small class="help hidden"><i class="icon-cancel-circle2"></i>اسم المرض بالعربي مطلوب </small>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="englishNameEdit" class="control-label text-semibold"> اسم المرض بالانجليزي <span class="required">*</span></label>
+                                <div>
+                                    <input id="englishNameEdit" type="text" class="form-control">
+                                </div>
+                                <small class="help hidden"><i class="icon-cancel-circle2"></i>اسم المرض بالانجليزي مطلوب </small>
+
+                            </div>
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm btn-success btn-ladda btn-ladda-spinner" data-spinner-color="#fff" data-style="fade" type="submit" form="editDesForm">
+                   <span class="ladda-label">
+                    <b>حفظ
+                    </b>
+                   </span>
+                </button>
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+                    </b>
+                </button>
+            </div>
+        </div>
+        <div class="modal-content" id="deleteDiseaseModal">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                        <i class="icon-exclamation"></i> حذف المرض </h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+                <p class="font-weight-bold text-center">هل انت متأكد من حذف المرض بشكل نهائي ؟ </p>
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn  btn-danger" id="deleteBtn" data-dismiss="modal">
+                    <b>حذف
+                    </b>
+                </button>
+                <button class="btn " data-dismiss="modal">
+                    <b>الغاء
+                    </b>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../shared/scripts/respond.min.js"></script>
+<script src="../shared/scripts/jquery.min.js"></script>
+<script src="assets/scripts/bootstrap.min.js"></script>
+<script src="../shared/scripts/drilldown.js"></script>
+<script src="../shared/scripts/nicescroll.min.js"></script>
+<script src="assets/scripts/app.min.js"></script>
+<script src="assets/scripts/layout_navbar_secondary_fixed.js"></script>
+<script>
+    $("#year").text(new Date().getFullYear() +' ©');
+
+</script>
+<script src="assets/scripts/footable.min.js"></script>
+<script src="assets/scripts/table_responsive.js"></script>
+<script type="text/javascript" src="assets/scripts/spin.min.js"></script>
+<script type="text/javascript" src="assets/scripts/ladda.min.js"></script>
+
+<script type="text/javascript" src="assets/scripts/components_buttons.js"></script>
+<script type="text/javascript" src="assets/scripts/core.min.js"></script>
+<script type="text/javascript" src="assets/scripts/select2.min.js"></script>
+
+<script type="text/javascript" src="assets/scripts/form_layouts.js"></script>
+<script type="text/javascript" src="assets/scripts/uniform.min.js"></script>
+
+
+<script type="text/javascript" src="assets/scripts/components_loaders.js"></script>
+<script src="assets/scripts/diseases.js"></script>
+</body>
+</html>

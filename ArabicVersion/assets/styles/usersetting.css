@@ -1,0 +1,120 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+/*******************************************************************/
+
+
+.nav-tabs-right>.nav-tabs-highlight>li.active>a, .nav-tabs-right>.nav-tabs-highlight>li.active>a:focus, .nav-tabs-right>.nav-tabs-highlight>li.active>a:hover{
+    border-left-color: rgb(130, 26, 60);
+}
+.form-group{
+    margin-bottom: 10px!important;
+}
+.checker span.disabled{
+    border-color: #dddddd;
+}
+ul{
+    list-style: none;
+}
+.modal{
+    z-index: 9998;
+}
+
+.panel-default>.panel-heading{
+    background-color: rgba(216, 216, 216, 0.46);
+}
+.checker span.disabled{
+    border-color: #dddddd;
+}
+.btn-operation{
+    width: 90px;
+}
+.modal-content{
+    direction: rtl;
+}
+
+.search-content-container2 .col-sm-6:last-child{
+    z-index: 9999;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 50%;
+}
+#search-input2{
+    border-radius: 0;
+    border-right: 0;
+}
+#search-result2{
+    position: absolute;
+    left: 120px;
+}
+.copyModal .modal-dialog{
+    width: 80%;
+}
+
+#correct_word2{
+    background-color: transparent;
+    border: 0;
+    color: #0b75e0;
+}
+
+@media screen and (max-width: 768px) {
+    #role-name{
+        margin: auto;
+    }
+    .nav-tabs:before {
+        content: '';
+    }
+    .nav-tabs>li.active>a:after, .nav-tabs>li.active>a:focus:after, .nav-tabs>li.active>a:hover:after{
+        background-color: rgb(130, 26, 60);
+    }
+
+}
+@media screen and (min-width: 768px){
+    #extensions .panel-body .row .col-sm-2{
+        width: 21%;
+    }
+    .nav-tabs-vertical>.nav-tabs {
+        display: table-cell;
+        border-bottom: 0;
+        width: 200px;
+    }
+}
+@media screen and (min-width: 993px){
+    .tabs-span{
+        position: absolute;
+        z-index: 9997;
+        width: 60%;
+        top: 20%;
+        left: 0;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 993px) and (min-width: 768px){
+    .tabs-span{
+        position: absolute;
+        z-index: 9997;
+        width: 50%;
+        top: 20%;
+        left: 0;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-tabs:before {
+        content: '';
+    }
+    .nav-tabs>li.active>a:after, .nav-tabs>li.active>a:focus:after, .nav-tabs>li.active>a:hover:after{
+        background-color: rgb(130, 26, 60);
+    }
+
+
+}
+@media screen and (max-width: 920px) and (min-width: 768px){
+    .tab-container span.caret{
+        display: none;
+    }
+}

@@ -1,0 +1,42 @@
+@import "shared.css";
+@import "style.css";
+
+/******************************************************************/
+.ui-pnotify-sticker{
+    display: none;
+}
+.datepicker {
+    width: 440px;
+}
+#adult{
+    position: absolute;
+    bottom: 7px;
+    left: 10px;
+    font-weight: bold;
+}
+.spineer-select{
+    left: -70px;
+}
+.dropdown-menu{
+    right: auto;
+}
+@media screen and (max-width: 993px){
+    .popover{
+        top: 60px!important;
+        left: 0!important;
+    }
+    .popover .arrow{
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .dropdown-menu{
+        right: 0;
+    }
+    .datepicker {
+        width: 320px;
+        overflow: scroll;
+    }
+
+}

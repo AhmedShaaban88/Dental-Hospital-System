@@ -1,0 +1,44 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+/*******************************************************************/
+
+.kv-file-upload{
+    display: none;
+}
+#imageHelper{
+    color: red;
+    font-size: 13px;
+    display: none;
+}
+.date-caret{
+    position: absolute;
+    left: 17px;
+    top: 40px;
+    color: grey;
+}
+.ranges{
+    padding: 10px;
+}
+.daterangepicker .calendar{
+    max-width: 386px;
+    padding: 0;
+}
+@media screen and (max-width: 600px){
+    .daterangepicker .table-condensed tr>td, .daterangepicker .table-condensed tr>th, .table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th{
+        padding: 0;
+    }
+    .daterangepicker.opensleft:after, .daterangepicker.opensleft:before{
+        display: none;
+    }
+}
+@media (min-width: 564px){
+    .daterangepicker .calendar, .daterangepicker .ranges, .daterangepicker.single .calendar, .daterangepicker.single .ranges {
+        float: right;
+    }
+}
+@media screen and (max-width: 810px) and (min-width: 769px){
+    .table tbody tr td{
+        padding: 0;
+    }
+}

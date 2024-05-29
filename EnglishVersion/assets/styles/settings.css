@@ -1,0 +1,87 @@
+@import "style.css";
+@import "shared.css";
+@import "table-shared.css";
+#avatar{
+    width: 90px;
+    border: 1px solid #eeeeee;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.tab-content{
+    direction: ltr;
+}
+.nav-tabs-right>.nav-tabs-highlight>li.active>a, .nav-tabs-right>.nav-tabs-highlight>li.active>a:focus, .nav-tabs-right>.nav-tabs-highlight>li.active>a:hover{
+    border-left-color: rgb(130, 26, 60);
+}
+.eye{
+    position: absolute;
+    left: 6px;
+    top: 6px;
+}
+.form-group{
+    margin-bottom: 10px!important;
+}
+.activeLang{
+    background-color: #e0e0e0;
+}
+.panel-user{
+    border: 0;
+}
+#user-settings .panel-body{
+   box-shadow: 0 0 0 rgba(0,0,0,0);
+    padding-bottom: 0;
+}
+#details-modal{
+    display: block;
+    background-color: #00000052;
+}
+.table-responsive{
+    direction: rtl;
+}
+
+label.cabinet{
+    display: block;
+    cursor: pointer;
+}
+
+label.cabinet input.file{
+    position: relative;
+    height: 100%;
+    width: auto;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    margin-top:-30px;
+}
+
+#upload-demo{
+    width: 250px;
+    height: 250px;
+    padding-bottom:25px;
+}
+figure figcaption {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding-left: 9px;
+    padding-bottom: 5px;
+    text-shadow: 0 0 10px #000;
+}
+input[type=file]{
+    display: none;
+}
+figure figcaption label {
+   cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    .nav-tabs:before {
+        content: '';
+    }
+    .nav-tabs>li.active>a:after, .nav-tabs>li.active>a:focus:after, .nav-tabs>li.active>a:hover:after{
+        background-color: rgb(130, 26, 60);
+    }
+}

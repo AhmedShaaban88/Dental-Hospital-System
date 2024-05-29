@@ -1,0 +1,19 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+/*******************************************************************/
+
+.kv-file-upload{
+    display: none;
+}
+#imageHelper{
+    color: red;
+    font-size: 13px;
+    display: none;
+}
+
+@media screen and (max-width: 810px) and (min-width: 769px){
+    .table tbody tr td{
+        padding: 0;
+    }
+}

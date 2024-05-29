@@ -1,0 +1,119 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+/*******************************************************************/
+
+#adult{
+    position: absolute;
+    bottom: 7px;
+    left: 10px;
+    font-weight: bold;
+}
+
+.nav-tabs-right>.nav-tabs-highlight>li.active>a, .nav-tabs-right>.nav-tabs-highlight>li.active>a:focus, .nav-tabs-right>.nav-tabs-highlight>li.active>a:hover{
+    border-left-color: rgb(130, 26, 60);
+}
+.form-group{
+    margin-bottom: 10px!important;
+}
+.currentBold{
+    font-weight: bold;
+}
+#editPatient{
+    display: none;
+}
+.datepicker {
+    width: 440px;
+}
+#patientPanel{
+    padding: 0 0 5px!important;
+}
+#diseases{
+    direction: rtl;
+}
+#diseases .panel-body{
+    padding: 0!important;
+}
+
+#diseases ul li{
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.timeline-action-content{
+    position: relative;
+    padding: 14px 24px;
+    border-radius: 3px;
+    display: inline-block;
+    background-color: rgba(153,153,153,0.11);
+    width: 300px;
+}
+
+.disases{
+    margin: 7px -4px!important;
+}
+.modal-content{
+    direction: rtl;
+}
+.timeline:after, .timeline:before{
+    display: none;
+}
+.timeline-time:before{
+    display: none;
+}
+#rays, #patient-settings{
+    direction: rtl;
+}
+.open-folder{
+    text-align: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+    border: 0;
+    box-shadow: 0 0 0 0;
+
+}
+.open-folder i{
+    font-size: 40px;
+}
+
+.x-ray-img{
+    width: 100%;
+    height: 200px;
+    border: 2px solid rgba(238, 238, 238, 0.22);
+    padding: 4px;
+    filter: brightness(60%);
+    transition: 0.3s ease-in;
+    cursor: zoom-in;
+}
+.x-ray-img:hover{
+    filter: opacity(100%);
+    padding: 0;
+}
+@media (min-width: 1025px){
+    .timeline-icon {
+        position: static;
+    }
+    .timeline-center .post-full .timeline-time, .timeline-center .timeline-time{
+        position: static;
+    }
+    .timeline-time{
+        text-align: center!important;
+        padding-left: 0!important;
+    }
+}
+@media (max-width: 768px) {
+    .nav-tabs:before {
+        content: '';
+    }
+    .nav-tabs>li.active>a:after, .nav-tabs>li.active>a:focus:after, .nav-tabs>li.active>a:hover:after{
+        background-color: rgb(130, 26, 60);
+    }
+    .timeline-action-content{
+        width: auto;
+    }
+    .datepicker{
+        left: 0!important;
+    }
+}
+
+

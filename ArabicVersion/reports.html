@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مستشفي طب الاسنان |  التقارير</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- IE Compatibility meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../shared/images/favicon.png">
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/core.min.css">
+    <link rel="stylesheet" href="../shared/styles/colors.min.css">
+    <link rel="stylesheet" href="assets/styles/components.min.css">
+    <link rel="stylesheet" href="../shared/icons/icomoon/styles.css">
+    <link rel="stylesheet" href="../shared/styles/bootstrap-datepicker.min.css">
+
+
+    <link rel="stylesheet" href="assets/styles/reports.css">
+</head>
+<body class="navbar-bottom">
+
+<!-- Page header -->
+<div class="page-header page-header-inverse">
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-inverse navbar-transparent">
+        <div class="navbar-header" id="navbar-mobile">
+            <h2 class="navbar-brand">مستشفي طب الاسنان والفم </h2>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown language-switch">
+                    <a class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span>
+                        <img src="../shared/images/eg.png" alt="" class="position-left">
+                        عربي
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="english"><img src="../shared/images/us.png" alt=""> English</a></li>
+                        <li><a class="arabic"><img src="../shared/images/eg.png" alt=""> عربي</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="../shared/images/avatar.png" alt="">
+                        <span>احمد</span>
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class=" icon-key"></i> تغيير كلمه المرور</a></li>
+                        <li><a href="#"><i class="icon-switch2"></i> تسجيل خروج</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+
+
+    <!-- /page header content -->
+
+
+    <div class="navbar navbar-inverse navbar-transparent" id="navbar-second">
+        <ul class="nav navbar-nav no-border visible-xs-block">
+            <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second-toggle"><i class="icon-menu7"></i></a></li>
+        </ul>
+
+        <div class="navbar-collapse collapse" id="navbar-second-toggle">
+            <ul class="nav navbar-nav navbar-nav-material">
+                <li><a href="">الرئيسيه</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">المرضي <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class=" icon-user-plus"></i> اضافه مريض</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="icon-list"></i> عرض المرضي</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        الموظفين <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class=" icon-user-plus"></i> اضافه موظف</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="icon-list"></i> عرض الموظفين</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        اعدادات العيادات <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">الاماكن</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">الاقسام</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">تخصصات الاقسام</a>
+                        </li> <li class="dropdown-submenu">
+                        <a href="#">سعه العياده</a>
+                    </li> <li class="dropdown-submenu">
+                        <a href="#">الوظائف</a>
+                    </li> <li class="dropdown-submenu">
+                        <a href="#">الامراض</a>
+                    </li> <li class="dropdown-submenu">
+                        <a href="#">الخدمات</a>
+                    </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        التحويلات <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">التحويلات بين العيادات</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">قائمه المرضي</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        الاشعه<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">طلب اشعه بانوراما</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">اضافه اشعه اكس</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">اضافه اشعه بانوراما</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">عرض كل الاشعه</a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+<!-- /page header -->
+
+
+<!-- Page container -->
+<div class="page-container">
+
+    <!-- Page content -->
+    <div class="page-content">
+        <div class="sidebar sidebar-main sidebar-default" >
+            <div class="sidebar-content">
+
+                <!-- Main navigation -->
+                <div class="sidebar-category sidebar-category-visible">
+                    <div class="category-title h6">
+                        <span>
+                        <i class="icon-inbox position-left"></i>التقارير
+                        </span>
+                        <ul class="icons-list">
+                            <li><a href="#" data-action="collapse"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="category-content no-padding">
+                        <ul class="navigation navigation-main navigation-accordion">
+                            <li>
+                                <a href="#">تقرير العيادات</a>
+                            </li>
+                            <li>
+                                <a href="#">تقرير المستشفي</a>
+                            </li>
+                           <li>
+                               <p class="text-danger-600">
+                                   لا يوجد تقارير حاليا
+
+                               </p>
+                           </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- /main navigation -->
+
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <!-- Table -->
+            <div class="row hidden" id="before-search">
+                <div class="panel panel-flat open-folder">
+                    <i class="icon-folder-open">
+
+                    </i>
+                    <p class="text-center text-muted">قم بأختيار التقرير من قائمه التقارير</p>
+                </div>
+                <div class="panel panel-flat open-folder">
+                    <i class="icon-warning2">
+
+                    </i>
+                    <p class="text-center text-danger-600">عفوا لا يوجد اي تقارير حتي الان</p>
+                </div>
+
+            </div>
+            <div class="pace-demo hidden" id="loader-content">
+                <div class="theme_tail theme_tail_with_text"><div class="pace_progress" data-progress="60" style="width: 60%;"></div><div class="pace_activity"></div></div>
+            </div>
+            <div class="panel panel-flat">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h5 class="text-bold panel-title border-bottom-blue">
+                                <i class="icon-newspaper position-left"></i>
+                                تقرير العيادات
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-body">
+                <div class="row">
+                    <form action="#">
+                        <fieldset>
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="pName">اسم المريض <span class="required" title="مطلوب">*</span></label>
+                                            <input id="pName" type="text" class="form-control">
+                                            <small class="help hidden" id="pName-help">
+                                                <i class="icon-cancel-circle2"></i> اسم المريض مطلوب</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="clinic">العياده/ العيادات<span class="required" title="مطلوب">*</span></label>
+                                            <span class="clear-select hidden">x</span>
+                                            <select id="clinic" multiple="multiple" class="select">
+                                                <optgroup label="عياادت الحشو">
+                                                    <option value="c1">عياده الدور الاول</option>
+                                                    <option value="c2">عياده الدور التاني</option>
+                                                    <option value="c3">عياده الدور السادس</option>
+                                                </optgroup>
+                                                <optgroup label="عياادت الحشو العصب">
+                                                    <option value="c1">عياده الدور الاول</option>
+                                                    <option value="c2">عياده الدور التاني</option>
+                                                    <option value="c3">عياده الدور السادس</option>
+                                                </optgroup>
+                                            </select>
+                                            <small class="help hidden" id="clinic-help">
+                                                <i class="icon-cancel-circle2"></i> اسم العياده مطلوب اختر واحده علي الاقل</small>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label for="fromdate">الفتره من <span class="required" title="مطلوب">*</span></label>
+                                        <input id="fromdate" type="text" class="form-control birth">
+                                        <small class="help hidden" id="fromdate-help">
+                                            <i class="icon-cancel-circle2"></i> الفتره من مطلوب</small>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="todate">الفتره الي <span class="required" title="مطلوب">*</span></label>
+                                        <input id="todate" type="text" class="form-control birth">
+                                        <small class="help hidden" id="todate-help">
+                                            <i class="icon-cancel-circle2"></i> الفتره الي مطلوب</small>
+                                    </div>
+                                </div>
+
+
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>الحاله<span class="required" title="مطلوب">*</span></label>
+                                                <select id="status" data-placeholder="اختر الحاله" class="select">
+                                                    <option></option>
+                                                    <option value="Cambodia">Cambodia</option>
+                                                    <option value="Cameroon">Cameroon</option>
+                                                    <option value="Canada">Canada</option>
+                                                    <option value="Cape Verde">Cape Verde</option>
+                                                </select>
+                                                <small class="help hidden" id="status-help">
+                                                    <i class="icon-cancel-circle2"></i> الحاله مطلوب اختر واحده</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>اللغه<span class="required" title="مطلوب">*</span></label>
+                                                <select id="lang" data-placeholder="اختر اللغه" class="select">
+                                                    <option></option>
+                                                    <option value="Cambodia">Cambodia</option>
+                                                    <option value="Cameroon">Cameroon</option>
+                                                    <option value="Canada">Canada</option>
+                                                    <option value="Cape Verde">Cape Verde</option>
+                                                </select>
+                                                <small class="help hidden" id="lang-help">
+                                                    <i class="icon-cancel-circle2"></i> اللغه مطلوب اختر واحده</small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>الترتيب<span class="required" title="مطلوب">*</span></label>
+                                            <select id="order" data-placeholder="اختر الترتيب" class="select">
+                                                <option></option>
+                                                <option value="Cambodia">Cambodia</option>
+                                                <option value="Cameroon">Cameroon</option>
+                                                <option value="Canada">Canada</option>
+                                                <option value="Cape Verde">Cape Verde</option>
+                                            </select>
+                                            <small class="help hidden" id="order-help">
+                                                <i class="icon-cancel-circle2"></i> الترتيب مطلوب اختر واحده</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>ترتيب ب<span class="required" title="مطلوب">*</span></label>
+                                            <select id="order-by" data-placeholder="ترتيب ب" class="select">
+                                                <option></option>
+                                                <option value="Cambodia">Cambodia</option>
+                                                <option value="Cameroon">Cameroon</option>
+                                                <option value="Canada">Canada</option>
+                                                <option value="Cape Verde">Cape Verde</option>
+                                            </select>
+                                            <small class="help hidden" id="order-by-help">
+                                                <i class="icon-cancel-circle2"></i> الترتيب ب مطلوب اختر واحده</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                </div>
+                </div>
+
+                <div class="text-left mt-5 panel-footer-form">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown"> تصدير<span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#"><i class="icon-file-pdf"></i> PDF</a></li>
+                            <li><a href="#"><i class="icon-file-word"></i> WORD</a></li>
+                            <li><a href="#"><i class="icon-file-picture"></i> IMAGE</a></li>
+                            <li><a href="#"><i class="icon-file-excel"></i> EXCEL</a></li>
+                            <li class="divider"></li>
+                            <li data-target=".share" data-toggle="modal"><a href="#"><i class="icon-share3"></i> مشاركه </a></li>
+                        </ul>
+                    </div>
+
+                    <button type="submit" id="viewBtn" class="btn btn-sm btn-success">عرض </button>
+
+                </div>
+
+            </div>
+            <!-- /table -->
+
+
+        </div>
+
+                        </div>
+                    </div>
+
+<!-- /page container -->
+
+<!-- Footer -->
+<div class="navbar navbar-default footer">
+
+    <div id="footer">
+        <div class="navbar-text">
+
+
+            <p>
+                جميع الحقوق محفوظه لتقنيه المعلومات | جامعه الدلتا
+                <span id="year"> </span></p>
+        </div>
+    </div>
+
+</div>
+<div class="search-content-container row">
+
+
+    <div class="col-sm-6 col-xs-12 search-container">
+        <div class="close-off-canvas">
+            <i class="icon-x icon-font-size2">
+
+            </i>
+        </div>
+        <form id="search-form">
+            <div class="row mt-5 p-10">
+                <div class="col-sm-12">
+                    <div class="input-group content-group">
+                        <div class="has-feedback has-feedback-left">
+                            <input type="text" class="form-control input-sm" id="search-input" title="اختار طريقه البحث اولا">
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-muted text-size-base"></i>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-search btn-sm btn-sm" form="search-form">
+                                البحث
+                                <span id="search-result" class="hidden"> عدد النتائج:  <b>55</b> </span>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-bold pl-10 hidden" id="do_mean">هل تقصد <button type="submit" id="correct_word" class="underlined"></button> </p>
+
+            </div>
+        </form>
+        <div class="col-sm-12 search-result-list">
+            <div class="text-center">
+                <div class="search-placeholder">
+                    <i class="icon-search4">
+
+                    </i>
+                    <p>قم بكتابه كلمه للبحث</p>
+                </div>
+                <div class="search-not-found hidden">
+                    <i class="icon-folder-open">
+
+                    </i>
+                    <p>لايوجد نتائج للبحث</p>
+                </div>
+                <!---------------loader ------------------------------------>
+                <div class="pace-demo hidden" id="loader-content-search">
+                    <div class="theme_tail theme_tail_with_text"><div class="pace_progress" data-progress="60" style="width: 60%;"></div><div class="pace_activity"></div></div>
+                </div>
+                <!-----------/loader ------------------>
+            </div>
+            <ul id="search-list-items-container" class="hidden">
+                <li>
+                    <a href="#">
+                        احمد السيد خالد
+                        <span class="additional-search">بالغ</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        احمد السيد خالد
+
+                    </a>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="col-sm-6 col-xs-12">
+
+    </div>
+</div>
+
+<!-- /footer -->
+<div class="modal fade share">
+    <div class="modal-dialog modal-dialog-centered" >
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h3 class="text-center m-auto">
+                        مشاركه التقرير </h3>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+            <form>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="form-group">
+                            <label for="users">المستخدم/ المستخدمين<span class="required" title="مطلوب">*</span></label>
+                            <select id="users" multiple="multiple" class="select">
+                                <option value="c1">عياده الدور الاول</option>
+                                <option value="c2">عياده الدور التاني</option>
+                                <option value="c3">عياده الدور السادس</option>
+                                <option value="c1">عياده الدور الاول</option>
+                                <option value="c2">عياده الدور التاني</option>
+                                <option value="c3">عياده الدور السادس</option>
+                            </select>
+                            <small class="help hidden" id="users-help">
+                                <i class="icon-cancel-circle2"></i> المستخدم المرسل اليه مطلوب</small>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row mt-5">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label>نوع الملف<span class="required" title="مطلوب">*</span></label>
+                            <select id="extensions" data-placeholder="اختر نوع الملف" class="select">
+                                <option></option>
+                                <option value="Cambodia">PDF</option>
+                                <option value="Cameroon">WORD</option>
+                                <option value="Canada">IMAGE</option>
+                                <option value="Cape Verde">EXCEL</option>
+                            </select>
+                        </div>
+                        <small class="help hidden" id="extensions-help">
+                            <i class="icon-cancel-circle2"></i> نوع الملف مطلوب</small>
+                    </div>
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer m-auto">
+                <button id="share-btn-save" class="btn btn-sm btn-success">
+                    <b>
+                        حفظ
+
+                    </b>
+                </button>
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>
+                        الغاء
+
+                    </b>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade viewModal">
+    <div class="modal-dialog modal-dialog-centered" >
+        <div class="modal-content">
+            <div class="modal-header">
+                  <span id="close-modal" data-dismiss="modal">
+                            <i class="icon-x"></i>
+                        </span>
+                <div class="col-md-12">
+                    <h3 class="text-center m-auto">
+                        عرض تقرير العيادات </h3>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <div class="pace-demo" id="loader-view">
+                    <div class="theme_tail theme_tail_with_text"><div class="pace_progress" data-progress="60" style="width: 60%;"></div><div class="pace_activity"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="form-loader hidden">
+    <div class="pace-demo" id="form-loader-content">
+        <div class="theme_tail theme_tail_with_text"><div class="pace_progress" data-progress="60" style="width: 60%;"></div><div class="pace_activity"></div></div>
+    </div>
+<h3>جاري حفظ البيانات ...</h3>
+</div>
+<script src="../shared/scripts/respond.min.js"></script>
+<script src="../shared/scripts/jquery.min.js"></script>
+<script src="assets/scripts/bootstrap.min.js"></script>
+<script src="../shared/scripts/drilldown.js"></script>
+<script src="../shared/scripts/nicescroll.min.js"></script>
+<script src="assets/scripts/app.min.js"></script>
+<script src="assets/scripts/layout_navbar_secondary_fixed.js"></script>
+<script>
+    $("#year").text(new Date().getFullYear() +' ©');
+
+</script>
+<script type="text/javascript" src="assets/scripts/components_buttons.js"></script>
+<script src="assets/scripts/footable.min.js"></script>
+
+<script type="text/javascript" src="assets/scripts/spin.min.js"></script>
+<script type="text/javascript" src="assets/scripts/ladda.min.js"></script>
+
+<script type="text/javascript" src="assets/scripts/core.min.js"></script>
+
+
+<script type="text/javascript" src="assets/scripts/form_layouts.js"></script>
+<script type="text/javascript" src="assets/scripts/uniform.min.js"></script>
+<script type="text/javascript" src="assets/scripts/select2.min.js"></script>
+<script type="text/javascript" src="../shared/scripts/bootstrap-datepicker.min.js"></script>
+
+<script type="text/javascript" src="assets/scripts/components_loaders.js"></script>
+<script type="text/javascript" src="assets/scripts/reports.js"></script>
+</body>
+</html>

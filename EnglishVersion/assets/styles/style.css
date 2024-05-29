@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Tjawl;
+    src: url("../../../shared/fonts/Tajawal-Regular.ttf");
+}
+body{
+    font-family: Tjawl, serif;
+}
+.page-header{
+    background-color: rgb(130, 26, 60);
+}
+.dropdown-menu>.dropdown-submenu>a:after{
+    content: '';
+}
+.navbar-brand{
+    font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+    .caret{
+        float: none!important;
+    }
+    .navbar-nav>.dropdown .caret{
+        margin-top: 0;
+    }
+
+}
+@media screen and (min-width: 769px){
+    .navbar-header{
+        float: none;
+    }
+}
+@media screen and (max-width: 500px){
+    .navbar-brand{
+        display: none;
+    }
+}

@@ -1,0 +1,93 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+/*******************************************************************/
+
+.datepicker {
+    width: 460px;
+}
+.mdtimepicker{
+    direction: ltr;
+}
+.glyphicon-folder-open:after{
+    content: " تصفح ";
+}
+
+.glyphicon-trash:after{
+    content: "مسح الكل ";
+}
+.glyphicon-trash:before{
+    color: red;
+    margin-left: 10px;
+}
+.kv-file-upload{
+    display: none;
+}
+.text-area{
+    height: auto!important;
+}
+
+.dropdown-menu{
+    min-width: 200px;
+}
+
+.tableCount{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.72);
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    z-index: 9999;
+    transition: 0.3s ease;
+}
+.goTop{
+    color: #dddddd;
+}
+.goTop:hover{
+    color: #dddddd;
+}
+.goTop i{
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.underlined{
+    text-decoration: underline;
+    background-color: transparent;
+    border: 0;
+    color: #0b75e0;
+}
+.search-result{
+    position: absolute;
+    left: 120px;
+}
+#search-input2, #search-input3 {
+    border-radius: 0;
+    border-right: 0;
+}
+@media screen and (max-width: 840px) and (min-width: 768px){
+.first-search{
+    width: 70%;
+}
+}
+
+@media screen and (max-width: 768px) {
+    .delete-all, .reply-btn-container{
+        text-align: center;
+    }
+    .delete-all .btn{
+        margin-bottom: 5px;
+    }
+    .nav-tabs:before {
+        content: '';
+    }
+    .nav-tabs>li.active>a:after, .nav-tabs>li.active>a:focus:after, .nav-tabs>li.active>a:hover:after{
+        background-color: rgb(130, 26, 60);
+    }
+
+
+}
+

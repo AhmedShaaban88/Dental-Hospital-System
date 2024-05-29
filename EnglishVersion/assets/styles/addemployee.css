@@ -1,0 +1,34 @@
+@import "shared.css";
+@import "style.css";
+
+/******************************************************************/
+
+fieldset{
+    margin-top: 40px;
+}
+.address{
+    padding-right: 20px;
+}
+.ui-pnotify-sticker{
+    display: none;
+}
+
+.datepicker {
+    width: 440px;
+}
+.btn-navigate{
+    display: none;!important;
+}
+.icon-file-plus:before{
+    content: "\e93f";
+}.icon-file-plus:after{
+    content: " اضافه صوره ";
+}
+.fileinput-remove .icon-cross3:after{
+    content: "مسح الصوره";
+}
+#imageHelper{
+    color: red;
+    font-size: 13px;
+    display: none;
+}

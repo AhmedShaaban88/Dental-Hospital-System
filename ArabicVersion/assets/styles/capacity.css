@@ -1,0 +1,25 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+
+
+/*******************************************************************/
+.datepicker {
+    width: 460px;
+}
+.mdtimepicker {
+    direction: ltr;
+}
+.dropdown-menu{
+    right: auto;
+}
+
+@media screen and (max-width: 768px){
+    .dropdown-menu{
+        right: 0;
+    }
+    .datepicker {
+        width: 320px;
+        overflow: scroll;
+    }
+}

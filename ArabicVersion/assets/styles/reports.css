@@ -1,0 +1,47 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+/*******************************************************************/
+.open-folder{
+    text-align: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+    border: 0;
+    box-shadow: 0 0 0 0;
+
+}
+.open-folder i{
+    font-size: 40px;
+}
+.datepicker {
+    width: 440px;
+}
+
+#close-modal{
+    display: block;
+    text-align: left;
+    cursor: pointer;
+    color: grey;
+}
+.viewModal h3{
+    margin: 0;
+}
+.dropdown-menu{
+    right: auto;
+}
+
+@media screen and (max-width: 768px){
+    .dropdown-menu-right, .dropdown-menu.pull-right {
+        right: auto;
+    }
+    .dropdown-menu{
+        right: 0;
+    }
+    .datepicker {
+        width: 320px;
+        overflow: scroll;
+    }
+
+}
+
+

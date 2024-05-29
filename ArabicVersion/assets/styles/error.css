@@ -1,0 +1,13 @@
+@import "style.css";
+@import "shared.css";
+@import "table-shared.css";
+
+#container-error{
+    padding: 0;
+    background-color: white!important;
+}
+#error-img{
+    width: 300px;
+    display: block;
+    margin: auto;
+}

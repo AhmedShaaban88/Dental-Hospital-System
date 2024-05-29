@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مستشفي طب الاسنان | عرض الاشعه</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- IE Compatibility meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../shared/images/favicon.png">
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/core.min.css">
+    <link rel="stylesheet" href="../shared/styles/colors.min.css">
+    <link rel="stylesheet" href="assets/styles/components.min.css">
+    <link rel="stylesheet" href="../shared/icons/icomoon/styles.css">
+    <link rel="stylesheet" href="../shared/styles/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="../shared/styles/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="assets/styles/viewrays.css">
+</head>
+<body class="navbar-bottom" id="top">
+
+<!-- Page header -->
+<div class="page-header page-header-inverse">
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-inverse navbar-transparent">
+        <div class="navbar-header" id="navbar-mobile">
+            <h2 class="navbar-brand">مستشفي طب الاسنان والفم </h2>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown language-switch">
+                    <a class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span>
+                        <img src="../shared/images/eg.png" alt="" class="position-left">
+                        عربي
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="english"><img src="../shared/images/us.png" alt=""> English</a></li>
+                        <li><a class="arabic"><img src="../shared/images/eg.png" alt=""> عربي</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="../shared/images/avatar.png" alt="">
+                        <span>احمد</span>
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class=" icon-key"></i> تغيير كلمه المرور</a></li>
+                        <li><a href="#"><i class="icon-switch2"></i> تسجيل خروج</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+
+
+    <!-- /page header content -->
+
+
+    <div class="navbar navbar-inverse navbar-transparent" id="navbar-second">
+        <ul class="nav navbar-nav no-border visible-xs-block">
+            <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second-toggle"><i class="icon-menu7"></i></a></li>
+        </ul>
+
+        <div class="navbar-collapse collapse" id="navbar-second-toggle">
+            <ul class="nav navbar-nav navbar-nav-material">
+                <li><a href="">الرئيسيه</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">المرضي <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class=" icon-user-plus"></i> اضافه مريض</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="icon-list"></i> عرض المرضي</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        الموظفين <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class=" icon-user-plus"></i> اضافه موظف</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="icon-list"></i> عرض الموظفين</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        اعدادات العيادات <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">الاماكن</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">الاقسام</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">تخصصات الاقسام</a>
+                        </li> <li class="dropdown-submenu">
+                        <a href="#">سعه العياده</a>
+                    </li> <li class="dropdown-submenu">
+                        <a href="#">الوظائف</a>
+                    </li> <li class="dropdown-submenu">
+                        <a href="#">الامراض</a>
+                    </li> <li class="dropdown-submenu">
+                        <a href="#">الخدمات</a>
+                    </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        التحويلات <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">التحويلات بين العيادات</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">قائمه المرضي</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        الاشعه<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">طلب اشعه بانوراما</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">اضافه اشعه اكس</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">اضافه اشعه بانوراما</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">عرض كل الاشعه</a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+<!-- /page header -->
+
+
+<!-- Page container -->
+<div class="page-container">
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+            <div class="row">
+
+
+                <div class="col-md-12">
+
+                    <form action="#">
+                        <div class="panel panel-flat">
+                            <div class="panel-heading">
+                                <h5 class="border-bottom-blue page-head"><i class="icon-list position-left"></i> الاشعه المتوفره للمريض </h5>
+
+                            </div>
+                            <div class="panel-body">
+                                <fieldset>
+                                    <div>
+                                        <div class="form-group">
+                                            <label> نوع الاشعه <span class="required">*</span></label>
+
+                                            <select id="rayTypes" data-placeholder="نوع الاشعه" class="select">
+                                                <option></option>
+                                                <optgroup label="نوع الاشعه">
+                                                <option  value="xrays"> اشعه اكس</option>
+                                                <option  value="panoramarays"> اشعه بانوراما</option>
+                                                </optgroup>
+                                            </select>
+                                            <small class="help hidden"><i class="icon-cancel-circle2"></i>نوع الاشعه مطلوب من فضلك اختر واحده</small>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="fromdate">الفتره من </label>
+                                            <input id="fromdate" type="text" class="form-control birth">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="todate">الفتره الي </label>
+                                            <input id="todate" type="text" class="form-control birth">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="text-center mt-5">
+                                    <button type="submit" class="btn btn-sm btn-success btn-ladda btn-ladda-spinner" id="search-btn" data-spinner-color="#fff" data-style="fade"><span class="ladda-label">بحث </span></button>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </form>
+                </div>
+
+
+            </div>
+
+            <div class="row" id="before-search">
+                <div class="panel panel-flat open-folder">
+                    <i class="icon-folder-open">
+
+                    </i>
+                    <p class="text-center text-muted">قم بأختيار نوع الاشعه والفتره الزمنيه ثم اضغط بحث</p>
+                </div>
+
+            </div>
+            <!---------------loader ------------------------------------>
+            <div class="pace-demo hidden" id="loader-content">
+                <div class="theme_tail theme_tail_with_text"><div class="pace_progress" data-progress="60" style="width: 60%;"></div><div class="pace_activity"></div></div>
+            </div>
+            <!-----------/loader ------------------>
+            <div class="row mt-5">
+                <div class="panel panel-flat">
+                    <div class="panel-body">
+                        <div class="col-sm-3 mt-5">
+                            <a href="../shared/images/bg1.jpg" data-fancybox="gallery">
+                                <img alt="ray-image" src="../shared/images/bg1.jpg" class="x-ray-img">
+                                <div class="text-center img-details">
+                                    <p>اشعه مقطعيه </p>
+                                    <p>22/06/1996</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 mt-5">
+                            <a href="../shared/images/bg2.jpg" data-fancybox="gallery">
+                                <img alt="ray-image" src="../shared/images/bg2.jpg" class="x-ray-img">
+                                <div class="text-center img-details">
+                                    <p>اشعه مقطعيه </p>
+                                    <p>22/06/1996</p>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="col-sm-3 mt-5">
+                            <a href="../shared/images/bg3.jpg" data-fancybox="gallery">
+                                <img alt="ray-image" src="../shared/images/bg3.jpg" class="x-ray-img">
+                                <div class="text-center img-details">
+                                    <p>اشعه مقطعيه </p>
+                                    <p>22/06/1996</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 mt-5">
+                            <a href="../shared/images/avatar.png" data-fancybox="gallery">
+                                <img alt="ray-image" src="../shared/images/avatar.png" class="x-ray-img">
+                                <div class="text-center img-details">
+                                    <p>اشعه مقطعيه </p>
+                                    <p>22/06/1996</p>
+                                </div>
+                            </a>
+                        </div> <div class="col-sm-3 mt-5">
+                            <a href="../shared/images/bg1.jpg" data-fancybox="gallery">
+                                <img alt="ray-image" src="../shared/images/bg1.jpg" class="x-ray-img">
+                                <div class="text-center img-details">
+                                    <p>اشعه مقطعيه </p>
+                                    <p>22/06/1996</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 mt-5">
+                            <a href="../shared/images/bg2.jpg" data-fancybox="gallery">
+                                <img alt="ray-image" src="../shared/images/bg2.jpg" class="x-ray-img">
+                                <div class="text-center img-details">
+                                    <p>اشعه مقطعيه </p>
+                                    <p>22/06/1996</p>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="col-sm-3 mt-5">
+                            <a href="../shared/images/bg3.jpg" data-fancybox="gallery">
+                                <img alt="ray-image" src="../shared/images/bg3.jpg" class="x-ray-img">
+                                <div class="text-center img-details">
+                                    <p>اشعه مقطعيه </p>
+                                    <p>22/06/1996</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 mt-5">
+                            <a href="../shared/images/avatar.png" data-fancybox="gallery">
+                                <img alt="ray-image" src="../shared/images/avatar.png" class="x-ray-img">
+                                <div class="text-center img-details">
+                                    <p>اشعه مقطعيه </p>
+                                    <p>22/06/1996</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+    <div>
+        <p class="text-center" id="tableCount">
+            <span>1</span> الي <span>40</span> من <span>250</span> صوره
+            <a href="#top" id="goTop">
+                <i class="icon-chevron-up"></i>
+            </a>
+        </p>
+
+    </div>
+</div>
+<!-- /page container -->
+
+<!-- Footer -->
+<div class="navbar navbar-default footer">
+
+    <div id="footer">
+        <div class="navbar-text">
+
+
+            <p>
+                جميع الحقوق محفوظه لتقنيه المعلومات | جامعه الدلتا
+                <span id="year"> </span></p>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal fade" id="deleteXRays">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+
+                         <i class="icon-exclamation"></i>
+                        حذف الصوره </h5>
+                </div>
+
+            </div>
+            <div class="modal-body">
+
+                <p class="font-weight-bold text-center">هل انت متأكد من حذف الصوره بشكل نهائي ؟ </p>
+            </div>
+            <div class="modal-footer m-auto">
+                <button class="btn btn-rounded btn-danger" id="deleteBtn" data-dismiss="modal">
+                    <b>حذف
+                        <i class="icon-trash-alt"></i>
+                    </b>
+                </button>
+                <button class="btn btn-rounded" data-dismiss="modal">
+                    <b>الغاء
+                        <i class="icon-arrow-left5">
+
+                        </i>
+                    </b>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade editImage">
+    <!--<input type="color" value="blue" id="fill" />-->
+    <!--<select id="font" class="select">-->
+        <!--<option>arial</option>-->
+        <!--<option>tahoma</option>-->
+        <!--<option>times new roman</option>-->
+    <!--</select>-->
+    <!--<br />-->
+    <!--<canvas id="canvas" width="750" height="550"></canvas>-->
+    <!--<a href='' id='txt' target="_blank">Click Me!!</a>-->
+    <!--<br />-->
+    <!--<img id="preview" />-->
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+
+                         <i class="icon-notebook"></i>
+                        اضافه ملاحظات علي الصوره</h5>
+                </div>
+
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group p-5">
+
+                            <label style="display: block">
+                                لون الخط
+                            </label>
+                            <input id="fill" type="color" class="form-control" value="#000000">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group p-5">
+
+                            <label style="display: block">
+                                 لون خلفيه الخط
+                            </label>
+                            <input id="fillBack" type="color" class="form-control" value="#ffffff">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-sm-6">
+
+                        <label >
+                            نوع الخط
+                        </label>
+                        <select id="font" data-placeholder="نوع الخط"  class="select">
+                            <option>Arial</option>
+                            <option>Tahoma</option>
+                            <option>Times new roman</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6">
+
+                        <label >
+                           تكبير/تصغير
+                        </label>
+                        <input type="range" id="scale" class="form-control" value="1">
+                    </div>
+                </div>
+
+                <canvas id="canvas" width="550" height="502" style="border: 1px solid #eeeeee"></canvas>
+                <div class="text-center">
+
+                    <button type="button" id="cropImageBtn" class="btn btn-primary mt-10 btn-sm">اضافه الملاحظه</button>
+                </div>
+
+                <div class="text-center mt-10 hidden" id="preview-container" style="border: 1px solid #eeeeee">
+                    <p>عرض الصوره</p>
+                    <img alt="user-avatar" id="item-img-output">
+
+                </div>
+            </div>
+            <div class="modal-footer m-auto">
+                <button type="button" id="saveImage" class="btn btn-success btn-sm">حفظ</button>
+
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">اغلاق</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /footer -->
+<script src="../shared/scripts/respond.min.js"></script>
+<script src="../shared/scripts/jquery.min.js"></script>
+<script src="assets/scripts/bootstrap.min.js"></script>
+<script src="../shared/scripts/drilldown.js"></script>
+<script src="../shared/scripts/nicescroll.min.js"></script>
+<script src="assets/scripts/app.min.js"></script>
+<script src="assets/scripts/layout_navbar_secondary_fixed.js"></script>
+<script>
+    $("#year").text(new Date().getFullYear() +' ©');
+
+</script>
+<script src="assets/scripts/footable.min.js"></script>
+<script type="text/javascript" src="assets/scripts/spin.min.js"></script>
+<script type="text/javascript" src="assets/scripts/ladda.min.js"></script>
+<script type="text/javascript" src="../shared/scripts/bootstrap-datepicker.min.js"></script>
+
+<script type="text/javascript" src="assets/scripts/components_buttons.js"></script>
+<script type="text/javascript" src="assets/scripts/core.min.js"></script>
+<script type="text/javascript" src="assets/scripts/select2.min.js"></script>
+
+<script type="text/javascript" src="assets/scripts/form_layouts.js"></script>
+<script type="text/javascript" src="assets/scripts/uniform.min.js"></script>
+
+<script type="text/javascript" src="assets/scripts/components_loaders.js"></script>
+<script type="text/javascript" src="../shared/scripts/jquery.fancybox.min.js"></script>
+<script src="../shared/scripts/fabric.1.7.15.min.js"></script>
+
+<script src="assets/scripts/viewrays.js"></script>
+</body>
+</html>

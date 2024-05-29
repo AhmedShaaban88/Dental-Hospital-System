@@ -1,0 +1,23 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+/*******************************************************************/
+.form-group{
+    margin-bottom: 10px!important;
+}
+.currentBold{
+    font-weight: bold;
+}
+#editEmployee{
+    display: none;
+}
+.datepicker {
+    width: 440px;
+}
+.panel-body{
+    padding: 0!important;
+}
+#editEmployeeForm{
+    padding: 10px;
+}
+

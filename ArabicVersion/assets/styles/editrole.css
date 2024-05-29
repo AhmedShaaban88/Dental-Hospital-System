@@ -1,0 +1,16 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+@import "addrole.css";
+/*******************************************************************/
+@media screen and (max-width: 768px){
+    #delete-btn{
+        margin-top: 5px;
+    }
+    .nav-tabs:before {
+        content: '';
+    }
+    .nav-tabs>li.active>a:after, .nav-tabs>li.active>a:focus:after, .nav-tabs>li.active>a:hover:after{
+        background-color: rgb(130, 26, 60);
+    }
+}

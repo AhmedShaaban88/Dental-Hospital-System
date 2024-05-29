@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مستشفي طب الاسنان | قائمه المرضي</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- IE Compatibility meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../shared/images/favicon.png">
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/core.min.css">
+    <link rel="stylesheet" href="../shared/styles/colors.min.css">
+    <link rel="stylesheet" href="assets/styles/components.min.css">
+    <link rel="stylesheet" href="../shared/icons/icomoon/styles.css">
+    <link rel="stylesheet" href="../shared/styles/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="../shared/styles/mdtimepicker.css">
+
+    <link rel="stylesheet" href="assets/styles/patientlist.css">
+</head>
+<body class="navbar-bottom" id="top">
+
+<!-- Page header -->
+<div class="page-header page-header-inverse">
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-inverse navbar-transparent">
+        <div class="navbar-header" id="navbar-mobile">
+            <h2 class="navbar-brand">مستشفي طب الاسنان والفم </h2>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown language-switch">
+                    <a class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span>
+                        <img src="../shared/images/eg.png" alt="" class="position-left">
+                        عربي
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="english"><img src="../shared/images/us.png" alt=""> English</a></li>
+                        <li><a class="arabic"><img src="../shared/images/eg.png" alt=""> عربي</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown dropdown-user">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="../shared/images/avatar.png" alt="">
+                        <span>احمد</span>
+                        <i class="caret"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class=" icon-key"></i> تغيير كلمه المرور</a></li>
+                        <li><a href="#"><i class="icon-switch2"></i> تسجيل خروج</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+
+
+    <!-- /page header content -->
+
+
+    <div class="navbar navbar-inverse navbar-transparent" id="navbar-second">
+        <ul class="nav navbar-nav no-border visible-xs-block">
+            <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second-toggle"><i class="icon-menu7"></i></a></li>
+        </ul>
+
+        <div class="navbar-collapse collapse" id="navbar-second-toggle">
+            <ul class="nav navbar-nav navbar-nav-material">
+                <li><a href="">الرئيسيه</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">المرضي <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class=" icon-user-plus"></i> اضافه مريض</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="icon-list"></i> عرض المرضي</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        الموظفين <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class=" icon-user-plus"></i> اضافه موظف</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#"><i class="icon-list"></i> عرض الموظفين</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        اعدادات العيادات <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">الاماكن</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">الاقسام</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">تخصصات الاقسام</a>
+                        </li> <li class="dropdown-submenu">
+                        <a href="#">سعه العياده</a>
+                    </li> <li class="dropdown-submenu">
+                        <a href="#">الوظائف</a>
+                    </li> <li class="dropdown-submenu">
+                        <a href="#">الامراض</a>
+                    </li> <li class="dropdown-submenu">
+                        <a href="#">الخدمات</a>
+                    </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        التحويلات <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">التحويلات بين العيادات</a>
+                        </li>
+                        <li class="dropdown-submenu active">
+                            <a href="#">قائمه المرضي</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        الاشعه<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu width-200">
+                        <li class="dropdown-submenu">
+                            <a href="#">طلب اشعه بانوراما</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">اضافه اشعه اكس</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">اضافه اشعه بانوراما</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="#">عرض كل الاشعه</a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+<!-- /page header -->
+
+
+<!-- Page container -->
+<div class="page-container">
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-main sidebar-default" >
+            <div class="sidebar-content">
+
+                <!-- Main navigation -->
+                <div class="sidebar-category sidebar-category-visible">
+                    <div class="category-title h6">
+                        <span>
+                        <i class="icon-filter3 position-left"></i>تصفيه
+                        </span>
+                        <ul class="icons-list">
+                            <li><a href="#" data-action="collapse"></a></li>
+                        </ul>
+                    </div><div class="category-content no-padding">
+                        <ul class="navigation navigation-main navigation-accordion">
+
+                            <form id="filterForm" method="get" action="#">
+                                <div class="row">
+                                    <div class="col-sm-12 mt-5">
+                                        <div class="form-group p-5 text-right">
+
+                                            <label for="filter">
+                                                العياده
+                                            </label>
+                                            <select data-placeholder="العياده" class="select" id="filter">
+                                                <option></option>
+                                                <option value="all" selected>الكل</option>
+                                                <option value="c1">عياده 1</option>
+                                                <option value="c2">عياده 2</option>
+
+                                            </select>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 mt-5">
+                                        <div class="form-group p-5 text-right">
+
+                                            <label>
+                                                الوقت
+                                            </label>
+                                            <select data-placeholder="الوقت" class="select" >
+                                                <option></option>
+                                                <option value="all" selected>الكل</option>
+                                                <option value="c1">10:50 م</option>
+                                                <option value="c2">11:00ص</option>
+
+                                            </select>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group text-center m-10">
+                                    <button type="submit" class="btn btn-sm btn-block btn-success">
+                                        بحث
+                                        <i class="icon-search4"></i>
+                                    </button>
+
+                                </div>
+
+                            </form>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- /main navigation -->
+
+            </div>
+        </div>
+        <!-- /main sidebar -->
+        <!-- Main content -->
+        <div class="content-wrapper">
+            <div class="panel panel-flat">
+                <div class="panel-body">
+                    <div class="tabbable">
+                        <ul class="nav nav-tabs nav-justified">
+                            <li class="active">
+                                <a href="#patientList" data-toggle="tab">قائمه المرضي</a></li>
+                            <li>
+                                <a href="#waitingList" data-toggle="tab">قائمه الانتظار</a></li>
+                            <li>
+                                <a href="#futureList" data-toggle="tab">حالات الاعاده المستقبليه</a></li>
+
+                        </ul>
+
+                        <div class="tab-content">
+
+
+
+                            <div class="tab-pane active" id="patientList">
+                                <form id="search-form">
+                                    <div class="row mt-5 p-10">
+                                        <div class="col-sm-9 first-search">
+                                            <div class="input-group content-group">
+                                                <div class="input-group-btn">
+                                                    <button type="button" title="خيارات البحث" class="btn btn-default btn-search btn-search-opt dropdown-toggle" data-toggle="dropdown">
+                                                        <span class="caret"> </span>
+                                                        <i class="icon-cog3"></i>
+
+
+                                                    </button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li>
+                                                            <label class="check-labels" for="checkall">
+                                                                <input checked="checked" name="all-drop" value="all" class="styled" type="checkbox" id="checkall">
+                                                                <span class="p-20">الكل</span>
+                                                            </label>
+
+                                                        </li>
+                                                        <li class="divider"></li>
+                                                        <li>
+                                                            <label class="check-labels">
+                                                                <input type="checkbox" checked="checked" value="name" name="name-drop" class="search-item styled">
+
+                                                                <span class="p-20">الاسم</span>
+                                                            </label>
+                                                        </li>
+
+                                                        <li>
+                                                            <label class="check-labels">
+                                                                <input type="checkbox" checked="checked" value="code" name="code-drop" class="search-item styled">
+
+                                                                <span class="p-20">الكود</span>
+
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label class="check-labels">
+                                                                <input type="checkbox" checked="checked" value="clinic" name="clinic-drop" class="search-item styled">
+
+                                                                <span class="p-20">العياده</span>
+
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label class="check-labels">
+                                                                <input type="checkbox" checked="checked" value="status" name="status-drop" class="search-item styled">
+                                                                <span class="p-20"> حاله الكشف</span>
+
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="has-feedback has-feedback-left">
+                                                    <input type="text" class="form-control input-sm" id="search-input" title="اختار طريقه البحث اولا">
+                                                    <div class="form-control-feedback">
+                                                        <i class="icon-search4 text-muted text-size-base"></i>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-group-btn">
+                                                    <button type="submit" id="search-btn" class="btn btn-search btn-sm btn-sm" form="search-form">
+                                                        البحث
+                                                        <span id="search-result" class="search-result hidden"> عدد النتائج:  <b>55</b> </span>
+
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 reply-btn-container">
+                                            <div class="btn-group ">
+                                                <button type="button" class="btn btn-sm bg-success replay" data-target=".modalPatient" data-toggle="modal"> اضافه حاله اعاده </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <p class="text-bold pl-10 hidden" id="do_mean">هل تقصد <button type="submit" id="correct_word" class="underlined"></button> </p>
+                                </form>
+                                <!---------------loader ------------------------------------>
+                                <div class="pace-demo hidden" id="loader-content">
+                                    <div class="theme_tail theme_tail_with_text"><div class="pace_progress" data-progress="60" style="width: 60%;"></div><div class="pace_activity"></div></div>
+                                </div>
+                                <!-----------/loader ------------------>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th>
+                                                <span>م</span>
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th>
+                                                <span>العياده</span>
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th>
+                                                <span>الكود</span>
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th>
+                                                <span>الاسم</span>
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th>
+                                                <span>الوقت</span>
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th>
+                                                <span>حاله الكشف</span>
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th>الاجراءات</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>حشو</td>
+                                            <td>114545</td>
+                                            <td><a href="#" title="عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم">عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم</a></td>
+
+                                            <td>22:09 م</td>
+                                            <td>كشف جديد</td>
+                                            <td>
+
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn bg-default btn-sm btn-labeled dropdown-toggle" data-toggle="dropdown"><b><i class="icon-cog5"></i></b> الاجراءات <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="#"><i class="icon-rotate-cw3"></i> تحويل لعياده</a></li>
+                                                        <li><a href="#"><i class="icon-share4"></i> الخطه العلاجيه</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#" class="replay" data-target=".modalPatient" data-toggle="modal"><i class="icon-loop3"></i> اعاده</a></li>
+
+                                                        <li><a href="#" data-target=".modalPatient" data-toggle="modal"><i class="icon-x"></i> الغاء</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1</td>
+                                            <td>حشو</td>
+                                            <td>114545</td>
+                                            <td><a href="#" title="عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم">عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم</a></td>
+
+                                            <td>22:09 م</td>
+                                            <td>اعاده</td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm bg-default btn-labeled dropdown-toggle" data-toggle="dropdown"><b><i class="icon-cog5"></i></b> الاجراءات <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="#"><i class="icon-rotate-cw3"></i> تحويل لعياده</a></li>
+                                                        <li><a href="#"><i class="icon-share4"></i> الخطه العلاجيه</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#" class="replay" data-target=".modalPatient" data-toggle="modal"><i class="icon-loop3"></i> اعاده</a></li>
+
+                                                        <li><a href="#" data-target=".modalPatient" data-toggle="modal"><i class="icon-x"></i> الغاء</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>حشو</td>
+                                            <td>114545</td>
+                                            <td><a href="#" title="عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم">عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم</a></td>
+
+                                            <td>22:09 م</td>
+                                            <td>كشف جديد</td>
+                                            <td>
+
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm bg-default btn-labeled dropdown-toggle" data-toggle="dropdown"><b><i class="icon-cog5"></i></b> الاجراءات <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="#"><i class="icon-rotate-cw3"></i> تحويل لعياده</a></li>
+                                                        <li><a href="#"><i class="icon-share4"></i> الخطه العلاجيه</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#" class="replay" data-target=".modalPatient" data-toggle="modal"><i class="icon-loop3"></i> اعاده</a></li>
+
+                                                        <li><a href="#" data-target=".modalPatient" data-toggle="modal"><i class="icon-x"></i> الغاء</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>حشو</td>
+                                            <td>114545</td>
+                                            <td><a href="#" title="عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم">عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم</a></td>
+                                            <td>22:09 م</td>
+                                            <td>اعاده</td>
+                                            <td>
+
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm bg-default btn-labeled dropdown-toggle" data-toggle="dropdown"><b><i class="icon-cog5"></i></b> الاجراءات <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="#"><i class="icon-rotate-cw3"></i> تحويل لعياده</a></li>
+                                                        <li><a href="#"><i class="icon-share4"></i> الخطه العلاجيه</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#" class="replay" data-target=".modalPatient" data-toggle="modal"><i class="icon-loop3"></i> اعاده</a></li>
+
+                                                        <li><a href="#" data-target=".modalPatient" data-toggle="modal"><i class="icon-x"></i> الغاء</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+
+
+                                        </tbody>
+
+
+                                        <div>
+                                            <p class="text-center tableCount">
+                                                <span>1</span> الي <span>40</span> من <span>250</span> مريض
+                                                <a href="#top" class="goTop">
+                                                    <i class="icon-chevron-up"></i>
+                                                </a>
+                                            </p>
+
+                                        </div>
+
+                                    </table>
+                                    <!---------------loader ------------------------------------>
+                                    <div class="pace-demo">
+                                        <div class="theme_tail theme_tail_with_text"><div class="pace_progress" data-progress="60" style="width: 60%;"></div><div class="pace_activity"></div></div>
+                                    </div>
+                                    <!-----------/loader ------------------>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="waitingList">
+                                <form id="search-form3">
+                                    <div class="row mt-5 p-10">
+                                        <div class="col-sm-9">
+                                            <div class="input-group content-group">
+                                                <div class="input-group-btn" id="waiting-list">
+                                                    <button type="button" title="خيارات البحث" class="btn btn-default btn-search btn-search-opt dropdown-toggle" data-toggle="dropdown">
+                                                        <span class="caret"> </span>
+                                                        <i class="icon-cog3"></i>
+
+
+                                                    </button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li>
+                                                            <label class="check-labels2" for="checkall2">
+                                                                <input checked="checked" name="all2-drop" value="all" class="styled" type="checkbox" id="checkall2">
+                                                                <span class="p-20">الكل</span>
+                                                            </label>
+
+                                                        </li>
+                                                        <li class="divider"></li>
+                                                        <li>
+                                                            <label class="check-labels2">
+                                                                <input type="checkbox" checked="checked" value="name" name="name2-drop" class="search-item2 styled">
+
+                                                                <span class="p-20">الاسم</span>
+                                                            </label>
+                                                        </li>
+
+                                                        <li>
+                                                            <label class="check-labels2">
+                                                                <input type="checkbox" checked="checked" value="code" name="code2-drop" class="search-item2 styled">
+
+                                                                <span class="p-20">الكود</span>
+
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label class="check-labels2">
+                                                                <input type="checkbox" checked="checked" value="clinic" name="clinic2-drop" class="search-item2 styled">
+
+                                                                <span class="p-20">العياده</span>
+
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label class="check-labels2">
+                                                                <input type="checkbox" checked="checked" value="status" name="status2-drop" class="search-item2 styled">
+                                                                <span class="p-20"> حاله الكشف</span>
+
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="has-feedback has-feedback-left">
+                                                    <input type="text" class="form-control input-sm" id="search-input3" title="اختار طريقه البحث اولا">
+                                                    <div class="form-control-feedback">
+                                                        <i class="icon-search4 text-muted text-size-base"></i>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-group-btn">
+                                                    <button id="search-btn2" type="submit" class="btn btn-search btn-sm btn-sm" form="search-form">
+                                                        البحث
+                                                        <span id="search-result2" class="search-result hidden"> عدد النتائج:  <b>55</b> </span>
+
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-3 delete-all">
+                                            <button type="button" id="deleteAll" class="btn btn-sm btn-danger " data-target=".waitingModal" data-toggle="modal">الغاء الكل</button>
+
+
+                                        </div>
+                                    </div>
+                                    <p class="text-bold pl-10 hidden" id="do_mean3">هل تقصد <button type="submit" id="correct_word3" class="underlined"></button> </p>
+
+                                </form>
+                                <!---------------loader ------------------------------------>
+                                <div class="pace-demo hidden" id="loader-content2">
+                                    <div class="theme_tail theme_tail_with_text"><div class="pace_progress" data-progress="60" style="width: 60%;"></div><div class="pace_activity"></div></div>
+                                </div>
+                                <!-----------/loader ------------------>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th> م
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th> العياده
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th> الكود
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th>الاسم
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th>الوقت
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th>حاله الكشف
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th>الاجراءات</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>حشو</td>
+                                            <td>114545</td>
+                                                                                        <td><a href="#" title="عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم">عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم</a></td>
+
+                                            <td>22:09 م</td>
+                                            <td>اعاده</td>
+                                            <td>
+
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm bg-default btn-labeled dropdown-toggle" data-toggle="dropdown"><b><i class="icon-cog5"></i></b> الاجراءات <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="#"><i class="icon-rotate-cw3"></i> تحويل </a></li>
+                                                        <li><a href="#" class="delete-waiting-onc" data-target=".waitingModal" data-toggle="modal"><i class="icon-x"></i> الغاء</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1</td>
+                                            <td>حشو</td>
+                                            <td>114545</td>
+                                                                                        <td><a href="#" title="عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم">عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم</a></td>
+
+                                            <td>22:09 م</td>
+                                            <td>كشف جديد</td>
+                                            <td>
+
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm bg-default btn-labeled dropdown-toggle" data-toggle="dropdown"><b><i class="icon-cog5"></i></b> الاجراءات <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="#"><i class="icon-rotate-cw3"></i> تحويل </a></li>
+                                                        <li><a href="#" class="delete-waiting-onc" data-target=".waitingModal" data-toggle="modal"><i class="icon-x"></i> الغاء</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>حشو</td>
+                                            <td>114545</td>
+                                                                                        <td><a href="#" title="عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم">عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم</a></td>
+
+                                            <td>22:09 م</td>
+                                            <td>تم الكشف</td>
+                                            <td>
+
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm bg-default btn-labeled dropdown-toggle" data-toggle="dropdown"><b><i class="icon-cog5"></i></b> الاجراءات <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="#"><i class="icon-rotate-cw3"></i> تحويل </a></li>
+                                                        <li><a href="#" class="delete-waiting-onc" data-target=".waitingModal" data-toggle="modal"><i class="icon-x"></i> الغاء</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>حشو</td>
+                                            <td>114545</td>
+                                            <td><a href="#" title="عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم">عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم</a></td>
+                                            <td>22:09 م</td>
+                                            <td>تم الكشف</td>
+                                            <td>
+
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm bg-default btn-labeled dropdown-toggle" data-toggle="dropdown"><b><i class="icon-cog5"></i></b> الاجراءات <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li><a href="#"><i class="icon-rotate-cw3"></i> تحويل </a></li>
+                                                        <li><a href="#" class="delete-waiting-onc" data-target=".waitingModal" data-toggle="modal"><i class="icon-x"></i> الغاء</a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+
+
+                                        </tbody>
+
+
+
+                                        <div>
+                                            <p class="text-center tableCount">
+                                                <span>1</span> الي <span>40</span> من <span>250</span> كشف
+                                                <a href="#top" class="goTop">
+                                                    <i class="icon-chevron-up"></i>
+                                                </a>
+                                            </p>
+
+                                        </div>
+
+                                    </table>
+                                    <!---------------loader ------------------------------------>
+                                    <div class="pace-demo">
+                                        <div class="theme_tail theme_tail_with_text"><div class="pace_progress" data-progress="60" style="width: 60%;"></div><div class="pace_activity"></div></div>
+                                    </div>
+                                    <!-----------/loader ------------------>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="futureList">
+                                <form id="search-form2">
+                                    <div class="row mt-5 p-10">
+                                        <div class="col-sm-12">
+                                            <div class="input-group content-group">
+                                                <div class="input-group-btn" id="future-list">
+                                                    <button type="button" title="خيارات البحث" class="btn btn-default btn-search btn-search-opt dropdown-toggle" data-toggle="dropdown">
+                                                        <span class="caret"> </span>
+                                                        <i class="icon-cog3"></i>
+
+
+                                                    </button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li>
+                                                            <label class="check-labels3" for="checkall3">
+                                                                <input checked="checked" name="all3-drop" value="all" class="styled" type="checkbox" id="checkall3">
+                                                                <span class="p-20">الكل</span>
+                                                            </label>
+
+                                                        </li>
+                                                        <li class="divider"></li>
+                                                        <li>
+                                                            <label class="check-labels3">
+                                                                <input type="checkbox" checked="checked" value="name" name="name3-drop" class="search-item3 styled">
+
+                                                                <span class="p-20">الاسم</span>
+                                                            </label>
+                                                        </li>
+
+                                                        <li>
+                                                            <label class="check-labels3">
+                                                                <input type="checkbox" checked="checked" value="code" name="code3-drop" class="search-item3 styled">
+
+                                                                <span class="p-20">الكود</span>
+
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label class="check-labels3">
+                                                                <input type="checkbox" checked="checked" value="clinic" name="clinic3-drop" class="search-item3 styled">
+
+                                                                <span class="p-20">العياده</span>
+
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label class="check-labels3">
+                                                                <input type="checkbox" checked="checked" value="status" name="status3-drop" class="search-item3 styled">
+                                                                <span class="p-20"> حاله الكشف</span>
+
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                                <div class="has-feedback has-feedback-left">
+                                                    <input type="text" class="form-control input-sm" id="search-input2" title="اختار طريقه البحث اولا">
+                                                    <div class="form-control-feedback">
+                                                        <i class="icon-search4 text-muted text-size-base"></i>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-group-btn">
+                                                    <button type="submit" id="search-btn3" class="btn btn-search btn-sm btn-sm">
+                                                        البحث
+                                                        <span id="search-result3" class="search-result hidden"> عدد النتائج:  <b>55</b> </span>
+
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <p class="text-bold pl-10 hidden" id="do_mean2">هل تقصد <button type="submit" id="correct_word2" class="underlined"></button> </p>
+                                </form>
+                                <!---------------loader ------------------------------------>
+                                <div class="pace-demo hidden" id="loader-content3">
+                                    <div class="theme_tail theme_tail_with_text"><div class="pace_progress" data-progress="60" style="width: 60%;"></div><div class="pace_activity"></div></div>
+                                </div>
+                                <!-----------/loader ------------------>
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th> م
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th> العياده
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th> الكود
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th>الاسم
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th>الوقت
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th>حاله الكشف
+                                                <span class="caret"></span>
+
+                                            </th>
+                                            <th>الاجراءات</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>حشو</td>
+                                            <td>114545</td>
+                                                                                        <td><a href="#" title="عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم">عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم</a></td>
+
+                                            <td>22:09 م</td>
+                                            <td>تم الكشف</td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn bg-default btn-sm btn-labeled dropdown-toggle" data-toggle="dropdown"><b><i class="icon-cog5"></i></b> الاجراءات <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li>
+                                                            <a data-target=".futureModal" data-toggle="modal" class="editFutureBtn"><i class="icon-pencil7 position-left"></i> تعديل</a>
+                                                        </li>
+                                                        <li>
+                                                            <a data-target=".futureModal" data-toggle="modal" class="deleteFutureBtn"><i class="icon-trash-alt position-left"></i> حذف</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>1</td>
+                                            <td>حشو</td>
+                                            <td>114545</td>
+                                                                                        <td><a href="#" title="عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم">عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم</a></td>
+
+                                            <td>22:09 م</td>
+                                            <td>تم الكشف</td>
+                                            <td>
+
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn bg-default btn-sm btn-labeled dropdown-toggle" data-toggle="dropdown"><b><i class="icon-cog5"></i></b> الاجراءات <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li>
+                                                            <a data-target=".futureModal" data-toggle="modal" class="editFutureBtn"><i class="icon-pencil7 position-left"></i> تعديل</a>
+                                                        </li>
+                                                        <li>
+                                                            <a data-target=".futureModal" data-toggle="modal" class="deleteFutureBtn"><i class="icon-trash-alt position-left"></i> حذف</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>حشو</td>
+                                            <td>114545</td>
+                                                                                        <td><a href="#" title="عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم">عبدالرؤوف عبدالدائم عبدالسلام عبدالحميد عبدالحكيم</a></td>
+
+                                            <td>22:09 م</td>
+                                            <td>تم الكشف</td>
+                                            <td>
+
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn bg-default btn-sm btn-labeled dropdown-toggle" data-toggle="dropdown"><b><i class="icon-cog5"></i></b> الاجراءات <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li>
+                                                            <a data-target=".futureModal" data-toggle="modal" class="editFutureBtn"><i class="icon-pencil7 position-left"></i> تعديل</a>
+                                                        </li>
+                                                        <li>
+                                                            <a data-target=".futureModal" data-toggle="modal" class="deleteFutureBtn"><i class="icon-trash-alt position-left"></i> حذف</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+
+
+                                        </tbody>
+
+
+                                        <div>
+                                            <p class="text-center tableCount">
+                                                <span>1</span> الي <span>40</span> من <span>250</span> اعاده
+                                                <a href="#top" class="goTop">
+                                                    <i class="icon-chevron-up"></i>
+                                                </a>
+                                            </p>
+
+                                        </div>
+
+                                    </table>
+                                    <!---------------loader ------------------------------------>
+                                    <div class="pace-demo">
+                                        <div class="theme_tail theme_tail_with_text"><div class="pace_progress" data-progress="60" style="width: 60%;"></div><div class="pace_activity"></div></div>
+                                    </div>
+                                    <!-----------/loader ------------------>
+                                </div>
+
+
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</div>
+<!-- /page container -->
+<div class="modal fade modalPatient">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" id="patientReModal">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                          <i class="icon-rotate-cw3"></i>
+                        اضافه حاله اعاده
+                    </h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+            <div class="row">
+                <form id="patientReForm" action="#">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div id="clinicNameContainer">
+                                <label class="control-label text-semibold">
+                                    اسم العياده
+                                    <span class="required">*</span>
+                                </label>
+                                <div>
+                                    <div class="form-group">
+
+
+                                        <select id="re-case-clinic" data-placeholder="اسم العياده" class="select">
+                                            <option></option>
+                                            <optgroup label="اسم العياده">
+                                                <option value="c1">حشو</option>
+                                                <option value="c2">حشو 1</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                                <small class="help hidden" id="re-case-clinic-helper"><i class="icon-cancel-circle2"></i>اسم العياده مطلوب من فضلك اختر واحده</small>
+                            </div>
+                            <h6 class="hidden">اسم العياده:  <span class="text-bold">(عياده الحشو)</span></h6>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+
+
+                                <div id="patientNameContainer">
+                                    <label for="patientName" class="control-label text-semibold">
+                                        اسم المريض
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div>
+                                        <div class="form-group">
+                                            <input tabindex="0" id="patientName" class="form-control" type="text">
+
+                                        </div>
+                                    </div>
+                                    <small class="help hidden" id="patientNameHelper"><i class="icon-cancel-circle2"></i>اسم المريض مطلوب </small>
+                                </div>
+                                <h6 class="hidden">اسم المريض:  <span class="text-bold">احمد علي السيد خالد</span></h6>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="form-group">
+
+                                <label class="control-label text-semibold">
+                                    حاله الدخول
+                                    <span class="required">*</span>
+                                </label>
+                                <div>
+                                    <div class="form-group">
+
+
+                                        <select id="re-case-status" data-placeholder="حاله الدخول" class="select">
+                                            <option></option>
+                                            <optgroup label="حاله الدخول">
+                                                <option value="c3">حجز</option>
+                                                <option value="c4">انتظار</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                                <small class="help hidden" id="re-case-status-helper"><i class="icon-cancel-circle2"></i>حاله الدخول مطلوبه اختر واحده</small>
+
+
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="date" class="control-label text-semibold">التاريخ
+                                <span class="required">*</span>
+                            </label>
+                            <div>
+                                <div class="form-group">
+                                    <input id="date" type="text" class="form-control date">
+                                </div>
+                            </div>
+                            <small class="help hidden" id="re-case-date"><i class="icon-cancel-circle2"></i>التاريخ مطلوب</small>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div>
+                                <label class="control-label text-semibold">
+                                    الوقت
+                                    <span class="required">*</span>
+                                </label>
+                                <div>
+                                    <div class="form-group">
+
+
+                                        <input type="text" id="timepicker" class="form-control">
+                                    </div>
+                                </div>
+                                <small class="help hidden" id="timepickerHelper"><i class="icon-cancel-circle2"></i>الوقت مطلوب</small>
+                            </div>
+
+                        </div>
+                    </div>
+
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <div>
+                            <label for="capacity" class="control-label text-semibold">
+                                سعه العياده
+                                <span class="required">*</span>
+                            </label>
+                            <div>
+                                <div class="form-group">
+                                    <input id="capacity" class="form-control" type="number" min="0">
+
+                                </div>
+                            </div>
+                            <small class="help hidden" id="capacityHelper"><i class="icon-cancel-circle2"></i>سعه العياده مطلوب ولا بد ان تكون رقم صحيح</small>
+                        </div>
+
+                    </div>
+                </div>
+
+                </form>
+            </div>
+
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm btn-success btn-ladda btn-ladda-spinner" data-spinner-color="#fff" data-style="fade" type="submit" form="patientReForm">
+                   <span class="ladda-label">
+                    <b>حفظ
+                    </b>
+                   </span>
+                </button>
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+                    </b>
+                </button>
+            </div>
+        </div>
+        <div class="modal-content" id="patientExModal">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                          <i class="icon-exclamation"></i>الغاء كشف المريض
+                    </h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+
+                <form id="patientForm" action="#">
+                    <div class="form-group">
+                        <div class="row">
+                            <label for="reasonCancel" class="control-label text-semibold">
+                                سبب الالغاء
+                                <span class="required">*</span>
+                            </label>
+                            <div>
+                                <textarea id="reasonCancel" cols="10" rows="5" class="form-control text-area"></textarea>
+                            </div>
+                            <small class="help hidden" id="cancel-help"><i class="icon-cancel-circle2"></i>سبب الغاء الكشف مطلوب</small>
+                        </div>
+
+
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm btn-success btn-ladda btn-ladda-spinner" data-spinner-color="#fff" data-style="fade" type="submit" form="patientForm">
+                   <span class="ladda-label">
+                    <b>حفظ
+                    </b>
+                   </span>
+                </button>
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+                        </b>
+                                    </button>
+            </div>
+        </div>
+        <div class="modal-content" id="patientExModalCancel">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                          <i class="icon-exclamation"></i>الغاء كشف المريض
+                    </h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+
+                <p class="font-weight-bold text-center">هل انت متأكد من الغاء كشف المريض بشكل نهائي ؟ </p>
+
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm btn-danger btn-ladda btn-ladda-spinner" data-spinner-color="#fff" data-style="fade" type="submit">
+                   <span class="ladda-label">
+                    <b>حذف
+                    </b>
+                   </span>
+                </button>
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+                    </b>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade futureModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" id="editFutureModal">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                        <i class="icon-pencil7"></i>
+                        تعديل حاله اعاده
+                    </h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form id="patientFutureForm" action="#">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <div>
+                                    <label class="control-label text-semibold">
+                                        اسم العياده
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div>
+                                        <div class="form-group">
+
+
+                                            <select id="editReplaySelect" data-placeholder="اسم العياده" class="select">
+                                                <option></option>
+                                                <optgroup label="اسم العياده">
+                                                    <option value="c1">حشو</option>
+                                                    <option value="c2">حشو 1</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <small class="help hidden" id="editReplaySelectHelp"><i class="icon-cancel-circle2"></i>اسم العياده مطلوب من فضلك اختر واحده</small>
+                                </div>
+
+                            </div>
+                        </div>
+
+                            <div class="col-sm-12">
+                                <div class="form-group">
+
+                                        <label for="patientNameFuture" class="control-label text-semibold">
+                                            اسم المريض
+                                            <span class="required">*</span>
+                                        </label>
+                                        <div>
+                                            <div class="form-group">
+                                                <input id="patientNameFuture" class="form-control" type="text">
+
+                                            </div>
+                                        </div>
+                                        <small class="help hidden"  id="patientNameFutureHelp"><i class="icon-cancel-circle2"></i>اسم المريض مطلوب </small>
+
+
+                                </div>
+                            </div>
+
+
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <div>
+                                    <label class="control-label text-semibold">
+                                        حاله الكشف
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div>
+                                        <div class="form-group">
+
+
+                                            <select id="editReplaySelectStatus" data-placeholder="حاله الكشف" class="select">
+                                                <option></option>
+                                                <optgroup label="حاله الكشف">
+                                                    <option value="c3">حجز</option>
+                                                    <option value="c4">انتظار</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <small class="help hidden" id="editReplaySelectStatusHelp"><i class="icon-cancel-circle2"></i>حاله الكشف مطلوبه اختر واحده</small>
+                                </div>
+
+                            </div>
+                        </div>
+                      <div class="col-sm-12">
+                          <div class="form-group">
+                              <label for="date" class="control-label text-semibold">التاريخ
+                                  <span class="required">*</span>
+                              </label>
+                              <div>
+                                  <div class="form-group">
+                                      <input id="futureDate" type="text" class="form-control date">
+                                  </div>
+                              </div>
+                              <small class="help hidden" id="futureDateHelp"><i class="icon-cancel-circle2"></i>التاريخ مطلوب</small>
+
+                          </div>
+                      </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <div>
+                                    <label class="control-label text-semibold">
+                                        الوقت
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div>
+                                        <div class="form-group">
+
+
+                                            <input id="timePicker2" type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <small class="help hidden" id="timePicker2Help"><i class="icon-cancel-circle2"></i>الوقت مطلوب</small>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm btn-success btn-ladda btn-ladda-spinner" data-spinner-color="#fff" data-style="fade" type="submit" form="patientFutureForm">
+                   <span class="ladda-label">
+                    <b>حفظ
+                    </b>
+                   </span>
+                </button>
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+                    </b>
+                </button>
+            </div>
+        </div>
+        <div class="modal-content" id="deleteFuture">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                         <i class="icon-exclamation"></i>الغاء كشف المريض
+                    </h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+
+                <p class="font-weight-bold text-center">هل انت متأكد من الغاء كشف المريض بشكل نهائي ؟ </p>
+
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm btn-danger btn-ladda btn-ladda-spinner" data-spinner-color="#fff" data-style="fade" type="submit">
+                   <span class="ladda-label">
+                    <b>حذف
+                    </b>
+                   </span>
+                </button>
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+                    </b>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade waitingModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" id="deleteAllModal">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                          <i class="icon-exclamation"></i>الغاء كل الكشوفات
+                    </h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+
+                <p class="font-weight-bold text-center">هل انت متأكد من الغاء كل قائمه انتظار المرضي بشكل نهائي ؟ </p>
+
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm btn-danger btn-ladda btn-ladda-spinner" data-spinner-color="#fff" data-style="fade" type="submit">
+                   <span class="ladda-label">
+                    <b>حذف
+                    </b>
+                   </span>
+                </button>
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+                    </b>
+                </button>
+            </div>
+        </div>
+        <div class="modal-content" id="deleteWaitingPatientModal">
+            <div class="modal-header">
+                <div class="col-md-12">
+                    <h5 class="text-center m-auto">
+                          <i class="icon-exclamation"></i>الغاء كشف المريض
+                    </h5>
+                </div>
+
+
+            </div>
+            <div class="modal-body">
+
+                <p class="font-weight-bold text-center">هل انت متأكد من الغاء كشف المريض بشكل نهائي ؟ </p>
+
+            </div>
+            <div class="modal-footer m-auto">
+
+                <button class="btn btn-sm btn-danger btn-ladda btn-ladda-spinner" data-spinner-color="#fff" data-style="fade" type="submit">
+                   <span class="ladda-label">
+                    <b>حذف
+                    </b>
+                   </span>
+                </button>
+                <button class="btn btn-sm" data-dismiss="modal">
+                    <b>الغاء
+                    </b>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="search-content-container row">
+
+
+    <div class="col-sm-6 col-xs-12 search-container">
+        <div class="close-off-canvas">
+            <i class="icon-x icon-font-size2">
+
+            </i>
+        </div>
+        <form id="search-form-off-canvas">
+            <div class="row mt-5 p-10">
+                <div class="col-sm-12">
+                    <div class="input-group content-group">
+                        <div class="has-feedback has-feedback-left">
+                            <input type="text" class="form-control input-sm" id="search-input-off-canvas" title="اختار طريقه البحث اولا">
+                            <div class="form-control-feedback">
+                                <i class="icon-search4 text-muted text-size-base"></i>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-search btn-sm btn-sm" form="search-form">
+                                البحث
+                                <span id="search-result-off-canvas" class="hidden"> عدد النتائج:  <b>55</b> </span>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-bold pl-10 hidden" id="do_mean-off-canvas">هل تقصد <button type="submit" id="correct_word-off-canvas" class="underlined"></button> </p>
+
+            </div>
+        </form>
+        <div class="col-sm-12 search-result-list">
+            <div class="text-center">
+                <div class="search-placeholder">
+                    <i class="icon-search4">
+
+                    </i>
+                    <p>قم بكتابه كلمه للبحث</p>
+                </div>
+                <div class="search-not-found hidden">
+                    <i class="icon-folder-open">
+
+                    </i>
+                    <p>لايوجد نتائج للبحث</p>
+                </div>
+                <!---------------loader ------------------------------------>
+                <div class="pace-demo hidden" id="loader-content-search">
+                    <div class="theme_tail theme_tail_with_text"><div class="pace_progress" data-progress="60" style="width: 60%;"></div><div class="pace_activity"></div></div>
+                </div>
+                <!-----------/loader ------------------>
+            </div>
+            <ul id="search-list-items-container" class="hidden">
+                <li>
+                    <a href="#">
+                        احمد السيد خالد
+                        <span class="additional-search">بالغ</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        احمد السيد خالد
+
+                    </a>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="col-sm-6 col-xs-12">
+
+    </div>
+</div>
+<!-- Footer -->
+<div class="navbar navbar-default footer">
+
+    <div id="footer">
+        <div class="navbar-text">
+
+
+            <p>
+                جميع الحقوق محفوظه لتقنيه المعلومات | جامعه الدلتا
+                <span id="year"> </span></p>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- /footer -->
+<script src="../shared/scripts/respond.min.js"></script>
+<script src="../shared/scripts/jquery.min.js"></script>
+<script src="assets/scripts/bootstrap.min.js"></script>
+<script src="../shared/scripts/drilldown.js"></script>
+<script src="../shared/scripts/nicescroll.min.js"></script>
+<script src="assets/scripts/app.min.js"></script>
+<script src="assets/scripts/layout_navbar_secondary_fixed.js"></script>
+<script>
+    $("#year").text(new Date().getFullYear() +' ©');
+
+</script>
+<script type="text/javascript" src="assets/scripts/components_buttons.js"></script>
+<script src="assets/scripts/fileinput.min.js"></script>
+<script src="assets/scripts/uploader_bootstrap.js"></script>
+<script src="assets/scripts/footable.min.js"></script>
+<script src="assets/scripts/table_responsive.js"></script>
+<script type="text/javascript" src="assets/scripts/spin.min.js"></script>
+<script type="text/javascript" src="assets/scripts/ladda.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="assets/scripts/core.min.js"></script>
+<script type="text/javascript" src="assets/scripts/select2.min.js"></script>
+
+<script type="text/javascript" src="assets/scripts/form_layouts.js"></script>
+<script type="text/javascript" src="assets/scripts/uniform.min.js"></script>
+
+
+<script type="text/javascript" src="assets/scripts/components_loaders.js"></script>
+<script type="text/javascript" src="../shared/scripts/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="../shared/scripts/mdtimepicker.min.js"></script>
+
+<script src="assets/scripts/patientlist.js"></script>
+</body>
+</html>
+

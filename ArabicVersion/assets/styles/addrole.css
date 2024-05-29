@@ -1,0 +1,44 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+/*******************************************************************/
+.panel-default>.panel-heading{
+    background-color: rgba(216, 216, 216, 0.46);
+}
+.checker span.disabled{
+    border-color: #dddddd;
+}
+
+@media screen and (min-width: 993px){
+    .tabs-span{
+        position: absolute;
+        z-index: 9999;
+        width: 80%;
+        top: 20%;
+        left: 0;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 993px) and (min-width: 768px){
+    .tabs-span{
+        position: absolute;
+        z-index: 9999;
+        width: 75%;
+        top: 20%;
+        left: 0;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 768px) {
+    #role-name{
+        margin: auto;
+    }
+    .nav-tabs:before {
+        content: '';
+    }
+    .nav-tabs>li.active>a:after, .nav-tabs>li.active>a:focus:after, .nav-tabs>li.active>a:hover:after{
+        background-color: rgb(130, 26, 60);
+    }
+
+}
+

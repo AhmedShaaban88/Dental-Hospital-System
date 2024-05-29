@@ -1,0 +1,25 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+/*******************************************************************/
+#waiting-list{
+    display: none;
+}
+.panel{
+    margin-bottom: 0!important;
+}
+.btn-options{
+    text-align: left;
+}
+
+.open-folder{
+    text-align: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+    border: 0;
+    box-shadow: 0 0 0 0;
+}
+.open-folder i{
+    font-size: 60px;
+}
+

@@ -1,0 +1,50 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+/******************************************************************/
+.ui-pnotify-sticker{
+    display: none;
+}
+.datepicker {
+    width: 440px;
+}
+.dropdown-menu{
+    right: auto;
+}
+.glyphicon-folder-open:after{
+    content: " تصفح ";
+}
+
+.glyphicon-trash:after{
+    content: "مسح الكل ";
+}
+.glyphicon-trash:before{
+    color: red;
+    margin-left: 10px;
+}
+.kv-file-upload{
+    display: none;
+}
+.clear-select{
+    top: 30px;
+}
+@media screen and (max-width: 993px){
+    .popover{
+        top: 60px!important;
+        left: 0!important;
+    }
+    .popover .arrow{
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .dropdown-menu{
+        right: 0;
+    }
+    .datepicker {
+        width: 320px;
+        overflow: scroll;
+    }
+
+}

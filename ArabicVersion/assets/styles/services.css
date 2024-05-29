@@ -1,0 +1,29 @@
+@import "shared.css";
+@import "style.css";
+@import "table-shared.css";
+/*******************************************************************/
+
+.tree-container{
+    padding: 0 20px 5px;
+}
+.tree-container .btn{
+    margin-bottom: 5px;
+}
+.tree-container .tree-parent{
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.08);
+    margin-top: 10px;
+}
+.tree-container .tree-parent h3{
+    margin-top: 0;
+    cursor: pointer;
+}
+.tree-child{
+    padding: 10px;
+}
+.child-container{
+    display: none;
+}
+.child-container .row:not(:last-child){
+    border-bottom: 1px solid #eeeeee;
+}
